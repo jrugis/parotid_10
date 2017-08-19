@@ -2,16 +2,16 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2396
-    Nested = 153
-    Interfaces = 145
-    Abstract Classes = 165
-    Generic Types = 88
+  Total Type Removals = 2326
+    Nested = 149
+    Interfaces = 144
+    Abstract Classes = 162
+    Generic Types = 86
     Generic Interfaces = 6
     Generic Abstract Classes = 3
-    Attributes = 190
-  Total Field Removals = 834
-  Total Method Removals = 11911
+    Attributes = 178
+  Total Field Removals = 796
+  Total Method Removals = 12335
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -26,7 +26,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 65
-  Total Method Removals = 320
+  Total Method Removals = 317
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -267,11 +267,8 @@ Summary:
     Mono.Security.Protocol.Tls.Alert
         get_Message()
     Mono.Security.Protocol.Tls.CipherSuiteCollection
-        get_IsFixedSize()
-        get_IsReadOnly()
         set_Item(System.Int16,Mono.Security.Protocol.Tls.CipherSuite)
         set_Item(System.String,Mono.Security.Protocol.Tls.CipherSuite)
-        System.Collections.ICollection.get_IsSynchronized()
     Mono.Security.Protocol.Tls.CipherSuiteFactory
         .ctor()
     Mono.Security.Protocol.Tls.ClientSessionCache
@@ -551,16 +548,16 @@ Summary:
 Assembly: mscorlib
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 838
-    Nested = 48
+  Total Type Removals = 833
+    Nested = 47
     Interfaces = 88
-    Abstract Classes = 67
-    Generic Types = 8
+    Abstract Classes = 66
+    Generic Types = 7
     Generic Interfaces = 0
     Generic Abstract Classes = 1
-    Attributes = 89
-  Total Field Removals = 541
-  Total Method Removals = 5070
+    Attributes = 87
+  Total Field Removals = 505
+  Total Method Removals = 5016
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -1062,7 +1059,6 @@ Summary:
         CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
         CreateInstance(System.String,System.String,System.Object[])
         CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-        CreateInstance<T>()
         CreateInstanceFrom(System.AppDomain,System.String,System.String)
         CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)
         CreateInstanceFrom(System.String,System.String)
@@ -1362,7 +1358,6 @@ Summary:
         ToUInt32(System.Byte[],System.Int32)
         ToUInt64(System.Byte[],System.Int32)
     System.Boolean
-        GetTypeCode()
         TryParse(System.String,System.Boolean&)
     System.BRECORD
     System.Buffer
@@ -1371,20 +1366,15 @@ Summary:
         SetByte(System.Array,System.Int32,System.Byte)
         SetByteInternal(System.Array,System.Int32,System.Int32)
     System.Byte
-        MaxValue
-        MinValue
         GetTypeCode()
         Parse(System.String,System.Globalization.NumberStyles)
     System.CannotUnloadAppDomainException
     System.Char
-        MaxValue
-        MinValue
         ConvertFromUtf32(System.Int32)
         ConvertToUtf32(System.Char,System.Char)
         ConvertToUtf32(System.String,System.Int32)
         GetNumericValue(System.Char)
         GetNumericValue(System.String,System.Int32)
-        GetTypeCode()
         GetUnicodeCategory(System.String,System.Int32)
         IsControl(System.Char)
         IsControl(System.String,System.Int32)
@@ -1406,7 +1396,6 @@ Summary:
         IsSurrogatePair(System.String,System.Int32)
         IsSymbol(System.Char)
         IsSymbol(System.String,System.Int32)
-        IsUpper(System.Char)
         IsUpper(System.String,System.Int32)
         ToString(System.Char)
         ToUpper(System.Char,System.Globalization.CultureInfo)
@@ -1414,7 +1403,6 @@ Summary:
     System.CLSCompliantAttribute
         get_IsCompliant()
     System.Collections.ArrayList
-        DefaultInitialCapacity
         .ctor(System.Int32,System.Boolean)
         Adapter(System.Collections.IList)
         BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
@@ -1424,7 +1412,6 @@ Summary:
         Contains(System.Object,System.Int32,System.Int32)
         FixedSize(System.Collections.ArrayList)
         FixedSize(System.Collections.IList)
-        get_IsFixedSize()
         GetEnumerator(System.Int32,System.Int32)
         GetRange(System.Int32,System.Int32)
         LastIndexOf(System.Object)
@@ -1445,7 +1432,6 @@ Summary:
         BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
         BinarySearch(System.Object)
         BinarySearch(System.Object,System.Collections.IComparer)
-        get_IsFixedSize()
         GetEnumerator(System.Int32,System.Int32)
         GetRange(System.Int32,System.Int32)
         LastIndexOf(System.Object)
@@ -1458,7 +1444,6 @@ Summary:
         Sort(System.Int32,System.Int32,System.Collections.IComparer)
         TrimToSize()
     System.Collections.ArrayList/FixedSizeArrayListWrapper
-        get_IsFixedSize()
         RemoveRange(System.Int32,System.Int32)
         TrimToSize()
     System.Collections.ArrayList/FixedSizeListWrapper
@@ -1474,7 +1459,6 @@ Summary:
         BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)
         BinarySearch(System.Object)
         BinarySearch(System.Object,System.Collections.IComparer)
-        get_IsFixedSize()
         GetEnumerator(System.Int32,System.Int32)
         GetRange(System.Int32,System.Int32)
         LastIndexOf(System.Object)
@@ -1495,7 +1479,6 @@ Summary:
         And(System.Collections.BitArray)
         checkOperand(System.Collections.BitArray)
         get_IsReadOnly()
-        get_IsSynchronized()
         Not()
         Or(System.Collections.BitArray)
         set_Length(System.Int32)
@@ -1508,9 +1491,6 @@ Summary:
         .ctor(System.Int32)
         get_Capacity()
         set_Capacity(System.Int32)
-        System.Collections.ICollection.get_IsSynchronized()
-        System.Collections.IList.get_IsFixedSize()
-        System.Collections.IList.get_IsReadOnly()
     System.Collections.CollectionDebuggerView
         c
         .ctor(System.Collections.ICollection)
@@ -1530,23 +1510,15 @@ Summary:
         .ctor(System.Collections.Generic.ICollection`1<System.Collections.Generic.KeyValuePair`2<T,U>>)
         get_Items()
     System.Collections.Generic.Dictionary`2
-        DEFAULT_LOAD_FACTOR
-        HASH_FLAG
-        INITIAL_SIZE
-        NO_SLOT
         .ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
         .ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
         .ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
-        ContainsValue(TValue)
         get_Comparer()
         get_Keys()
-        get_Values()
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
         pick_key(TKey,TValue)
-        pick_value(TKey,TValue)
         System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys()
         System.Collections.Generic.IDictionary<TKey,TValue>.get_Values()
-        System.Collections.ICollection.get_IsSynchronized()
         System.Collections.IDictionary.Contains(System.Object)
         System.Collections.IDictionary.get_IsFixedSize()
         System.Collections.IDictionary.get_IsReadOnly()
@@ -1555,7 +1527,6 @@ Summary:
     System.Collections.Generic.Dictionary`2/KeyCollection
     System.Collections.Generic.Dictionary`2/ShimEnumerator
         Dispose()
-    System.Collections.Generic.Dictionary`2/ValueCollection
     System.Collections.Generic.IDictionary`2
         Add(TKey,TValue)
         ContainsKey(TKey)
@@ -1568,20 +1539,16 @@ Summary:
     System.Collections.Generic.KeyNotFoundException
         .ctor(System.String,System.Exception)
     System.Collections.Generic.List`1
-        DefaultCapacity
         .ctor(System.Collections.Generic.IEnumerable`1<T>)
         .ctor(T[],System.Int32)
-        AsReadOnly()
         BinarySearch(System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
         BinarySearch(T)
         BinarySearch(T,System.Collections.Generic.IComparer`1<T>)
-        CheckMatch(System.Predicate`1<T>)
         CheckRange(System.Int32,System.Int32)
         ConvertAll<TOutput>(System.Converter`2<T,TOutput>)
         CopyTo(System.Int32,T[],System.Int32,System.Int32)
         CopyTo(T[])
         Exists(System.Predicate`1<T>)
-        Find(System.Predicate`1<T>)
         FindAll(System.Predicate`1<T>)
         FindAllList(System.Predicate`1<T>)
         FindAllStackBits(System.Predicate`1<T>)
@@ -1593,7 +1560,6 @@ Summary:
         FindLastIndex(System.Int32,System.Predicate`1<T>)
         FindLastIndex(System.Predicate`1<T>)
         ForEach(System.Action`1<T>)
-        GetIndex(System.Int32,System.Int32,System.Predicate`1<T>)
         GetLastIndex(System.Int32,System.Int32,System.Predicate`1<T>)
         GetRange(System.Int32,System.Int32)
         IndexOf(T,System.Int32)
@@ -1604,21 +1570,12 @@ Summary:
         LastIndexOf(T)
         LastIndexOf(T,System.Int32)
         LastIndexOf(T,System.Int32,System.Int32)
-        RemoveAll(System.Predicate`1<T>)
         RemoveRange(System.Int32,System.Int32)
-        Reverse()
         Reverse(System.Int32,System.Int32)
-        Sort()
         Sort(System.Collections.Generic.IComparer`1<T>)
-        Sort(System.Comparison`1<T>)
         Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
-        System.Collections.ICollection.get_IsSynchronized()
-        System.Collections.IList.get_IsFixedSize()
-        System.Collections.IList.get_IsReadOnly()
-        TrimExcess()
         TrueForAll(System.Predicate`1<T>)
     System.Collections.Hashtable
-        CHAIN_MARKER
         .ctor(System.Collections.IDictionary)
         .ctor(System.Collections.IDictionary,System.Collections.IEqualityComparer)
         .ctor(System.Collections.IDictionary,System.Single)
@@ -1630,22 +1587,14 @@ Summary:
         get_hcp()
         get_IsFixedSize()
         get_IsReadOnly()
-        get_IsSynchronized()
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
     System.Collections.Hashtable/Enumerator
         .ctor(System.Collections.Hashtable)
-    System.Collections.Hashtable/HashKeys
-        get_IsSynchronized()
-    System.Collections.Hashtable/HashValues
-        get_IsSynchronized()
     System.Collections.Hashtable/SyncHashtable
         ContainsValue(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_IsSynchronized()
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-    System.Collections.ICollection
-        get_IsSynchronized()
     System.Collections.IDictionary
         Clear()
         Contains(System.Object)
@@ -1653,23 +1602,12 @@ Summary:
         get_IsReadOnly()
         get_Keys()
         get_Values()
-    System.Collections.IList
-        get_IsFixedSize()
-        get_IsReadOnly()
     System.Collections.ObjectModel.Collection`1
         .ctor(System.Collections.Generic.IList`1<T>)
         get_Items()
-        IsFixedSize(System.Collections.Generic.IList`1<T>)
-        IsSynchronized(System.Collections.Generic.IList`1<T>)
-        System.Collections.ICollection.get_IsSynchronized()
-        System.Collections.IList.get_IsFixedSize()
-        System.Collections.IList.get_IsReadOnly()
     System.Collections.ObjectModel.KeyedCollection`2
     System.Collections.ObjectModel.ReadOnlyCollection`1
         get_Items()
-        System.Collections.ICollection.get_IsSynchronized()
-        System.Collections.IList.get_IsFixedSize()
-        System.Collections.IList.get_IsReadOnly()
     System.Collections.Queue
     System.Collections.ReadOnlyCollectionBase
     System.Collections.SortedList
@@ -1678,7 +1616,6 @@ Summary:
         Clear()
         ContainsValue(System.Object)
         CopyToArray(System.Array,System.Int32,System.Collections.SortedList/EnumeratorMode)
-        get_IsSynchronized()
         get_Keys()
         get_Values()
         GetKey(System.Int32)
@@ -1697,7 +1634,6 @@ Summary:
     System.Collections.Stack
         default_capacity
         Contains(System.Object)
-        get_IsSynchronized()
         Synchronized(System.Collections.Stack)
         ToArray()
     System.Collections.Stack/Enumerator
@@ -1877,7 +1813,6 @@ Summary:
         ToUInt16(System.String,System.Int32)
         ToUInt16(System.UInt16)
         ToUInt32(System.DateTime)
-        ToUInt32(System.Object)
         ToUInt32(System.String)
         ToUInt32(System.String,System.Int32)
         ToUInt32(System.UInt32)
@@ -2073,13 +2008,11 @@ Summary:
         CreateDelegate(System.Type,System.Object,System.String)
         CreateDelegate(System.Type,System.Object,System.String,System.Boolean)
         CreateDelegate(System.Type,System.Object,System.String,System.Boolean,System.Boolean)
-        CreateDelegate(System.Type,System.Reflection.MethodInfo)
         CreateDelegate(System.Type,System.Type,System.String)
         CreateDelegate(System.Type,System.Type,System.String,System.Boolean)
         CreateDelegate(System.Type,System.Type,System.String,System.Boolean,System.Boolean)
         DynamicInvoke(System.Object[])
         DynamicInvokeImpl(System.Object[])
-        get_Method()
         GetCandidateMethod(System.Type,System.Type,System.String,System.Reflection.BindingFlags,System.Boolean,System.Boolean)
         GetMethodImpl()
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
@@ -2182,19 +2115,6 @@ Summary:
         .ctor(System.String)
         .ctor(System.String,System.Exception)
     System.Double
-        Epsilon
-        MaxValue
-        MinValue
-        NaN
-        NegativeInfinity
-        PositiveInfinity
-        State_AllowSign
-        State_ConsumeWhiteSpace
-        State_Decimal
-        State_Digits
-        State_Exit
-        State_Exponent
-        State_ExponentSign
         GetTypeCode()
         Parse(System.String,System.Globalization.NumberStyles)
         ToString(System.String)
@@ -2599,9 +2519,6 @@ Summary:
         Parse(System.String,System.Globalization.NumberStyles)
         TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int16&)
     System.Int32
-        MaxValue
-        MinValue
-        GetTypeCode()
         Parse(System.String,System.Globalization.NumberStyles)
     System.Int64
         MaxValue
@@ -3015,16 +2932,12 @@ Summary:
         Atan2(System.Double,System.Double)
         BigMul(System.Int32,System.Int32)
         Ceiling(System.Decimal)
-        Ceiling(System.Double)
-        Cos(System.Double)
         Cosh(System.Double)
         DivRem(System.Int32,System.Int32,System.Int32&)
         DivRem(System.Int64,System.Int64,System.Int64&)
         Exp(System.Double)
         Floor(System.Decimal)
         IEEERemainder(System.Double,System.Double)
-        Log(System.Double)
-        Log(System.Double,System.Double)
         Log10(System.Double)
         Max(System.Byte,System.Byte)
         Max(System.Decimal,System.Decimal)
@@ -3032,7 +2945,6 @@ Summary:
         Max(System.Int16,System.Int16)
         Max(System.Int64,System.Int64)
         Max(System.SByte,System.SByte)
-        Max(System.Single,System.Single)
         Max(System.UInt16,System.UInt16)
         Max(System.UInt32,System.UInt32)
         Max(System.UInt64,System.UInt64)
@@ -3042,7 +2954,6 @@ Summary:
         Min(System.Int16,System.Int16)
         Min(System.Int64,System.Int64)
         Min(System.SByte,System.SByte)
-        Min(System.Single,System.Single)
         Min(System.UInt16,System.UInt16)
         Min(System.UInt32,System.UInt32)
         Min(System.UInt64,System.UInt64)
@@ -3061,7 +2972,6 @@ Summary:
         Sign(System.Int64)
         Sign(System.SByte)
         Sign(System.Single)
-        Sin(System.Double)
         Sinh(System.Double)
         Tan(System.Double)
         Tanh(System.Double)
@@ -3274,6 +3184,7 @@ Summary:
     System.Reflection.AssemblyCompanyAttribute
         get_Company()
     System.Reflection.AssemblyConfigurationAttribute
+        get_Configuration()
     System.Reflection.AssemblyCopyrightAttribute
         get_Copyright()
     System.Reflection.AssemblyCultureAttribute
@@ -3320,6 +3231,7 @@ Summary:
     System.Reflection.AssemblyTitleAttribute
         get_Title()
     System.Reflection.AssemblyTrademarkAttribute
+        get_Trademark()
     System.Reflection.AssemblyVersionAttribute
     System.Reflection.Binder
         BindToField(System.Reflection.BindingFlags,System.Reflection.FieldInfo[],System.Object,System.Globalization.CultureInfo)
@@ -3441,6 +3353,9 @@ Summary:
         System.Runtime.InteropServices._AssemblyBuilder.Invoke(System.UInt32,System.Guid&,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
     System.Reflection.Emit.AssemblyBuilderAccess
     System.Reflection.Emit.ByRefType
+        MakeArrayType()
+        MakeArrayType(System.Int32)
+        MakePointerType()
     System.Reflection.Emit.ConstructorBuilder
         cattrs
         mhandle
@@ -3493,6 +3408,20 @@ Summary:
         System.Runtime.InteropServices._CustomAttributeBuilder.Invoke(System.UInt32,System.Guid&,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
     System.Reflection.Emit.CustomAttributeBuilder/CustomAttributeInfo
     System.Reflection.Emit.DerivedType
+        get_GenericParameterAttributes()
+        get_GUID()
+        get_StructLayoutAttribute()
+        GetEvents(System.Reflection.BindingFlags)
+        GetInterface(System.String,System.Boolean)
+        GetInterfaceMap(System.Type)
+        GetMembers(System.Reflection.BindingFlags)
+        GetNestedType(System.String,System.Reflection.BindingFlags)
+        GetNestedTypes(System.Reflection.BindingFlags)
+        GetProperties(System.Reflection.BindingFlags)
+        IsCOMObjectImpl()
+        MakeArrayType()
+        MakeArrayType(System.Int32)
+        MakePointerType()
     System.Reflection.Emit.DynamicILInfo
     System.Reflection.Emit.DynamicMethod
     System.Reflection.Emit.DynamicMethodTokenGenerator
@@ -3517,7 +3446,6 @@ Summary:
         IsCOMObjectImpl()
         MakeArrayType()
         MakeArrayType(System.Int32)
-        MakeByRefType()
         MakePointerType()
         SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
         SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
@@ -3602,7 +3530,6 @@ Summary:
         IsCOMObjectImpl()
         MakeArrayType()
         MakeArrayType(System.Int32)
-        MakeByRefType()
         MakePointerType()
         SetBaseTypeConstraint(System.Type)
         SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
@@ -3927,7 +3854,6 @@ Summary:
         IsValidGetMethodType(System.Type)
         MakeArrayType()
         MakeArrayType(System.Int32)
-        MakeByRefType()
         MakePointerType()
         SetCharSet(System.Reflection.TypeAttributes)
         SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
@@ -4051,9 +3977,6 @@ Summary:
         GetMethodBodyInternal(System.IntPtr)
         GetMethodFromHandle(System.RuntimeMethodHandle)
         GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
-        GetMethodFromHandleInternalType(System.IntPtr,System.IntPtr)
-        GetMethodFromHandleNoGenericCheck(System.RuntimeMethodHandle)
-        GetMethodFromIntPtr(System.IntPtr,System.IntPtr)
         GetMethodImplementationFlags()
         System.Runtime.InteropServices._MethodBase.GetIDsOfNames(System.Guid&,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
         System.Runtime.InteropServices._MethodBase.GetType()
@@ -4299,7 +4222,6 @@ Summary:
     System.Runtime.CompilerServices.CallConvStdcall
     System.Runtime.CompilerServices.CallConvThiscall
     System.Runtime.CompilerServices.CompilationRelaxationsAttribute
-        .ctor(System.Int32)
         get_CompilationRelaxations()
     System.Runtime.CompilerServices.CompilerGlobalScopeAttribute
     System.Runtime.CompilerServices.CompilerMarshalOverride
@@ -5568,7 +5490,6 @@ Summary:
         get_InternalProperties()
         get_IsFixedSize()
         get_IsReadOnly()
-        get_IsSynchronized()
         get_Keys()
         get_MethodKeys()
     System.Runtime.Remoting.Messaging.MethodResponse
@@ -6703,7 +6624,6 @@ Summary:
         AddHost(System.Object)
         Clear()
         get_IsReadOnly()
-        get_IsSynchronized()
         get_Locked()
         GetAssemblyEnumerator()
         GetDefaultHostEvidence(System.Reflection.Assembly)
@@ -6943,14 +6863,6 @@ Summary:
     System.Security.VerificationException
     System.Security.XmlSyntaxException
     System.Single
-        Epsilon
-        MaxValue
-        MaxValueEpsilon
-        MinValue
-        NaN
-        NegativeInfinity
-        PositiveInfinity
-        GetTypeCode()
         Parse(System.String)
         Parse(System.String,System.Globalization.NumberStyles)
         Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
@@ -6974,7 +6886,6 @@ Summary:
         CompareOrdinalCaseInsensitive(System.String,System.Int32,System.String,System.Int32,System.Int32)
         Concat(System.Object)
         Concat(System.Object,System.Object,System.Object,System.Object)
-        Contains(System.String)
         Copy(System.String)
         EndsWith(System.String,System.Boolean,System.Globalization.CultureInfo)
         EndsWith(System.String,System.StringComparison)
@@ -6994,7 +6905,6 @@ Summary:
         LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)
         LastIndexOf(System.String,System.Int32,System.StringComparison)
         LastIndexOf(System.String,System.StringComparison)
-        LastIndexOfAny(System.Char[],System.Int32)
         LastIndexOfAny(System.Char[],System.Int32,System.Int32)
         LastIndexOfOrdinal(System.String,System.Int32,System.Int32,System.Globalization.CompareOptions)
         LastIndexOfOrdinalIgnoreCase(System.Char,System.Int32,System.Int32)
@@ -7105,8 +7015,6 @@ Summary:
         Append(System.UInt16)
         Append(System.UInt32)
         Append(System.UInt64)
-        AppendLine()
-        AppendLine(System.String)
         CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
         EnsureCapacity(System.Int32)
         Equals(System.Text.StringBuilder)
@@ -7406,7 +7314,6 @@ Summary:
         get_DaylightName()
         get_StandardName()
     System.Type
-        DefaultBindingFlags
         FindInterfaces(System.Reflection.TypeFilter,System.Object)
         FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)
         get_DeclaringMethod()
@@ -7458,7 +7365,6 @@ Summary:
         GetMembers()
         GetMembers(System.Reflection.BindingFlags)
         GetMethod(System.Reflection.MethodInfo)
-        GetMethod(System.String,System.Type[])
         GetMethod(System.String,System.Type[],System.Reflection.ParameterModifier[])
         GetMethodImplInternal(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
         GetMethods()
@@ -7489,10 +7395,8 @@ Summary:
         InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Globalization.CultureInfo)
         IsCOMObjectImpl()
         make_array_type(System.Int32)
-        make_byref_type()
         MakeArrayType()
         MakeArrayType(System.Int32)
-        MakeByRefType()
         MakePointerType()
         ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)
         System.Runtime.InteropServices._Type.GetIDsOfNames(System.Guid&,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
@@ -7515,8 +7419,6 @@ Summary:
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
     System.TypeUnloadedException
     System.UInt16
-        MaxValue
-        MinValue
         GetTypeCode()
         Parse(System.String)
         Parse(System.String,System.Globalization.NumberStyles)
@@ -7579,7 +7481,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 37
   Total Field Removals = 122
-  Total Method Removals = 822
+  Total Method Removals = 808
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -7603,7 +7505,6 @@ Summary:
         CopyTo(T[],System.Int32)
         Enqueue(T)
         SetCapacity(System.Int32)
-        System.Collections.ICollection.get_IsSynchronized()
         ToArray()
         TrimExcess()
     System.Collections.Generic.Queue`1/Enumerator
@@ -7618,8 +7519,6 @@ Summary:
         .ctor(System.Int32)
         Contains(T)
         CopyTo(T[],System.Int32)
-        Peek()
-        System.Collections.ICollection.get_IsSynchronized()
         ToArray()
         TrimExcess()
     System.Collections.Generic.Stack`1/Enumerator
@@ -7635,7 +7534,6 @@ Summary:
         Contains(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_IsSynchronized()
         get_Keys()
         get_Values()
     System.Collections.Specialized.IOrderedDictionary
@@ -7643,7 +7541,6 @@ Summary:
         Contains(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_IsSynchronized()
         get_Keys()
         get_Values()
     System.Collections.Specialized.ListDictionary/DictionaryNodeCollection
@@ -7669,11 +7566,9 @@ Summary:
         get_HashCodeProvider()
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
         set_IsReadOnly(System.Boolean)
-        System.Collections.ICollection.get_IsSynchronized()
     System.Collections.Specialized.NameObjectCollectionBase/KeysCollection
         Get(System.Int32)
         get_Item(System.Int32)
-        System.Collections.ICollection.get_IsSynchronized()
     System.Collections.Specialized.NameValueCollection
         .ctor(System.Collections.IEqualityComparer)
         .ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)
@@ -8835,7 +8730,6 @@ Summary:
         set_Value(System.String)
     System.Security.Cryptography.OidCollection
         CopyTo(System.Security.Cryptography.Oid[],System.Int32)
-        get_IsSynchronized()
         get_Item(System.String)
         get_ReadOnly()
         GetEnumerator()
@@ -8920,7 +8814,6 @@ Summary:
         get_Information()
     System.Security.Cryptography.X509Certificates.X509ChainElementCollection
         CopyTo(System.Security.Cryptography.X509Certificates.X509ChainElement[],System.Int32)
-        get_IsSynchronized()
     System.Security.Cryptography.X509Certificates.X509ChainPolicy
         get_ApplicationPolicy()
         get_CertificatePolicy()
@@ -8946,7 +8839,6 @@ Summary:
         .ctor()
         Add(System.Security.Cryptography.X509Certificates.X509Extension)
         CopyTo(System.Security.Cryptography.X509Certificates.X509Extension[],System.Int32)
-        get_IsSynchronized()
         get_Item(System.Int32)
     System.Security.Cryptography.X509Certificates.X509IncludeOption
     System.Security.Cryptography.X509Certificates.X509Store
@@ -8977,7 +8869,6 @@ Summary:
     System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator
     System.Text.RegularExpressions.CaptureCollection
         get_IsReadOnly()
-        get_IsSynchronized()
         get_Item(System.Int32)
     System.Text.RegularExpressions.CategoryUtils
         .ctor()
@@ -8990,7 +8881,6 @@ Summary:
         Synchronized(System.Text.RegularExpressions.Group)
     System.Text.RegularExpressions.GroupCollection
         get_IsReadOnly()
-        get_IsSynchronized()
         get_Item(System.String)
     System.Text.RegularExpressions.ICompiler
         Reset()
@@ -9007,7 +8897,6 @@ Summary:
         ToString()
     System.Text.RegularExpressions.IntervalCollection
         Clear()
-        get_IsSynchronized()
         set_Item(System.Int32,System.Text.RegularExpressions.Interval)
         Sort()
     System.Text.RegularExpressions.Match
@@ -9015,7 +8904,6 @@ Summary:
         Synchronized(System.Text.RegularExpressions.Match)
     System.Text.RegularExpressions.MatchCollection
         get_IsReadOnly()
-        get_IsSynchronized()
     System.Text.RegularExpressions.MatchEvaluator
     System.Text.RegularExpressions.PatternCompiler
         DecodeOp(System.UInt16,System.Text.RegularExpressions.OpCode&,System.Text.RegularExpressions.OpFlags&)
@@ -9203,22 +9091,20 @@ Summary:
 Assembly: System.Core
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 125
-    Nested = 51
+  Total Type Removals = 122
+    Nested = 50
     Interfaces = 11
     Abstract Classes = 9
-    Generic Types = 71
+    Generic Types = 70
     Generic Interfaces = 6
     Generic Abstract Classes = 2
-    Attributes = 6
+    Attributes = 5
   Total Field Removals = 32
-  Total Method Removals = 277
+  Total Method Removals = 300
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
-        $$field-0
         .ctor()
-    <PrivateImplementationDetails>/$ArrayType$136
     Consts
     Locale
         .ctor()
@@ -9233,6 +9119,27 @@ Summary:
     System.Action`3
     System.Action`4
     System.Collections.Generic.HashSet`1
+        .ctor(System.Collections.Generic.IEnumerable`1<T>)
+        .ctor(System.Collections.Generic.IEnumerable`1<T>,System.Collections.Generic.IEqualityComparer`1<T>)
+        .ctor(System.Collections.Generic.IEqualityComparer`1<T>)
+        CheckIsSubsetOf(System.Collections.Generic.IEnumerable`1<T>)
+        CheckIsSupersetOf(System.Collections.Generic.IEnumerable`1<T>)
+        CopyTo(T[])
+        CreateSetComparer()
+        ExceptWith(System.Collections.Generic.IEnumerable`1<T>)
+        get_Comparer()
+        GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+        IntersectWith(System.Collections.Generic.IEnumerable`1<T>)
+        IsProperSubsetOf(System.Collections.Generic.IEnumerable`1<T>)
+        IsProperSupersetOf(System.Collections.Generic.IEnumerable`1<T>)
+        IsSubsetOf(System.Collections.Generic.IEnumerable`1<T>)
+        IsSupersetOf(System.Collections.Generic.IEnumerable`1<T>)
+        Overlaps(System.Collections.Generic.IEnumerable`1<T>)
+        RemoveWhere(System.Predicate`1<T>)
+        SetEquals(System.Collections.Generic.IEnumerable`1<T>)
+        SymmetricExceptWith(System.Collections.Generic.IEnumerable`1<T>)
+        TrimExcess()
+        UnionWith(System.Collections.Generic.IEnumerable`1<T>)
     System.Func`1
     System.Func`4
     System.Func`5
@@ -9643,6 +9550,9 @@ Summary:
     System.MonoLimitationAttribute
     System.MonoNotSupportedAttribute
     System.MonoTODOAttribute
+        comment
+        .ctor(System.String)
+        get_Comment()
     System.Runtime.CompilerServices.ExecutionScope
     System.Runtime.CompilerServices.IStrongBox
     System.Runtime.CompilerServices.StrongBox`1
@@ -9808,7 +9718,7 @@ Summary:
 Assembly: UnityEngine.AnimationModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 43
+  Total Type Removals = 42
     Nested = 0
     Interfaces = 1
     Abstract Classes = 3
@@ -9817,7 +9727,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 336
+  Total Method Removals = 587
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.Animation
@@ -10119,6 +10029,257 @@ Summary:
         set_weight(System.Single)
         set_wrapMode(UnityEngine.WrapMode)
     UnityEngine.Animator
+        .ctor()
+        ApplyBuiltinRootMotion()
+        CheckIfInIKPass()
+        CheckIfInIKPassInternal()
+        ClearInternalControllerPlayable()
+        ConvertStateMachineBehaviour<T>(UnityEngine.ScriptableObject[])
+        CrossFade(System.Int32,System.Single)
+        CrossFade(System.Int32,System.Single,System.Int32)
+        CrossFade(System.Int32,System.Single,System.Int32,System.Single)
+        CrossFade(System.String,System.Single)
+        CrossFade(System.String,System.Single,System.Int32)
+        CrossFade(System.String,System.Single,System.Int32,System.Single)
+        CrossFadeInFixedTime(System.Int32,System.Single)
+        CrossFadeInFixedTime(System.Int32,System.Single,System.Int32)
+        CrossFadeInFixedTime(System.Int32,System.Single,System.Int32,System.Single)
+        CrossFadeInFixedTime(System.String,System.Single)
+        CrossFadeInFixedTime(System.String,System.Single,System.Int32)
+        CrossFadeInFixedTime(System.String,System.Single,System.Int32,System.Single)
+        ForceStateNormalizedTime(System.Single)
+        get_allowConstantClipSamplingOptimization()
+        get_angularVelocity()
+        get_animatePhysics()
+        get_applyRootMotion()
+        get_avatar()
+        get_avatarRoot()
+        get_bodyPosition()
+        get_bodyRotation()
+        get_cullingMode()
+        get_deltaPosition()
+        get_deltaRotation()
+        get_feetPivotActive()
+        get_fireEvents()
+        get_gravityWeight()
+        get_hasRootMotion()
+        get_hasTransformHierarchy()
+        get_humanScale()
+        get_isHuman()
+        get_isInitialized()
+        get_isMatchingTarget()
+        get_isOptimizable()
+        get_isRootPositionOrRotationControlledByCurves()
+        get_layerCount()
+        get_layersAffectMassCenter()
+        get_leftFeetBottomHeight()
+        get_linearVelocityBlending()
+        get_logWarnings()
+        get_parameterCount()
+        get_parameters()
+        get_pivotPosition()
+        get_pivotWeight()
+        get_playableGraph()
+        get_playbackTime()
+        get_recorderMode()
+        get_recorderStartTime()
+        get_recorderStopTime()
+        get_rightFeetBottomHeight()
+        get_rootPosition()
+        get_rootRotation()
+        get_runtimeAnimatorController()
+        get_speed()
+        get_stabilizeFeet()
+        get_targetPosition()
+        get_targetRotation()
+        get_updateMode()
+        get_velocity()
+        GetAnimatorClipInfoInternal(System.Int32,System.Boolean,System.Object)
+        GetAnimatorTransitionInfo(System.Int32)
+        GetBehaviour(System.Type)
+        GetBehaviour<T>()
+        GetBehaviours(System.Int32,System.Int32)
+        GetBehaviours<T>()
+        GetBodyPositionInternal()
+        GetBodyRotationInternal()
+        GetBoneTransform(UnityEngine.HumanBodyBones)
+        GetBoneTransformInternal(System.Int32)
+        GetBool(System.Int32)
+        GetBool(System.String)
+        GetBoolID(System.Int32)
+        GetBoolString(System.String)
+        GetCurrentAnimatorClipInfo(System.Int32)
+        GetCurrentAnimatorClipInfo(System.Int32,System.Collections.Generic.List`1<UnityEngine.AnimatorClipInfo>)
+        GetCurrentAnimatorClipInfoCount(System.Int32)
+        GetCurrentAnimatorStateInfo(System.Int32)
+        GetFloat(System.Int32)
+        GetFloat(System.String)
+        GetFloatID(System.Int32)
+        GetFloatString(System.String)
+        GetHintWeightPositionInternal(UnityEngine.AvatarIKHint)
+        GetIKHintPosition(UnityEngine.AvatarIKHint)
+        GetIKHintPositionInternal(UnityEngine.AvatarIKHint)
+        GetIKHintPositionWeight(UnityEngine.AvatarIKHint)
+        GetIKPosition(UnityEngine.AvatarIKGoal)
+        GetIKPositionInternal(UnityEngine.AvatarIKGoal)
+        GetIKPositionWeight(UnityEngine.AvatarIKGoal)
+        GetIKPositionWeightInternal(UnityEngine.AvatarIKGoal)
+        GetIKRotation(UnityEngine.AvatarIKGoal)
+        GetIKRotationInternal(UnityEngine.AvatarIKGoal)
+        GetIKRotationWeight(UnityEngine.AvatarIKGoal)
+        GetIKRotationWeightInternal(UnityEngine.AvatarIKGoal)
+        GetInteger(System.Int32)
+        GetInteger(System.String)
+        GetIntegerID(System.Int32)
+        GetIntegerString(System.String)
+        GetLayerIndex(System.String)
+        GetLayerName(System.Int32)
+        GetLayerWeight(System.Int32)
+        GetNextAnimatorClipInfo(System.Int32)
+        GetNextAnimatorClipInfo(System.Int32,System.Collections.Generic.List`1<UnityEngine.AnimatorClipInfo>)
+        GetNextAnimatorClipInfoCount(System.Int32)
+        GetNextAnimatorStateInfo(System.Int32)
+        GetParameter(System.Int32)
+        GetQuaternion(System.Int32)
+        GetQuaternion(System.String)
+        GetStats()
+        GetVector(System.Int32)
+        GetVector(System.String)
+        HasState(System.Int32,System.Int32)
+        INTERNAL_CALL_GetBodyPositionInternal(UnityEngine.Animator,UnityEngine.Vector3&)
+        INTERNAL_CALL_GetBodyRotationInternal(UnityEngine.Animator,UnityEngine.Quaternion&)
+        INTERNAL_CALL_GetIKHintPositionInternal(UnityEngine.Animator,UnityEngine.AvatarIKHint,UnityEngine.Vector3&)
+        INTERNAL_CALL_GetIKPositionInternal(UnityEngine.Animator,UnityEngine.AvatarIKGoal,UnityEngine.Vector3&)
+        INTERNAL_CALL_GetIKRotationInternal(UnityEngine.Animator,UnityEngine.AvatarIKGoal,UnityEngine.Quaternion&)
+        INTERNAL_CALL_InternalGetCurrentGraph(UnityEngine.Animator,UnityEngine.Playables.PlayableGraph&)
+        INTERNAL_CALL_MatchTarget(UnityEngine.Animator,UnityEngine.Vector3&,UnityEngine.Quaternion&,UnityEngine.AvatarTarget,UnityEngine.MatchTargetWeightMask&,System.Single,System.Single)
+        INTERNAL_CALL_SetBodyPositionInternal(UnityEngine.Animator,UnityEngine.Vector3&)
+        INTERNAL_CALL_SetBodyRotationInternal(UnityEngine.Animator,UnityEngine.Quaternion&)
+        INTERNAL_CALL_SetBoneLocalRotationInternal(UnityEngine.Animator,System.Int32,UnityEngine.Quaternion&)
+        INTERNAL_CALL_SetIKHintPositionInternal(UnityEngine.Animator,UnityEngine.AvatarIKHint,UnityEngine.Vector3&)
+        INTERNAL_CALL_SetIKPositionInternal(UnityEngine.Animator,UnityEngine.AvatarIKGoal,UnityEngine.Vector3&)
+        INTERNAL_CALL_SetIKRotationInternal(UnityEngine.Animator,UnityEngine.AvatarIKGoal,UnityEngine.Quaternion&)
+        INTERNAL_CALL_SetLookAtPositionInternal(UnityEngine.Animator,UnityEngine.Vector3&)
+        INTERNAL_get_angularVelocity(UnityEngine.Vector3&)
+        INTERNAL_get_deltaPosition(UnityEngine.Vector3&)
+        INTERNAL_get_deltaRotation(UnityEngine.Quaternion&)
+        INTERNAL_get_pivotPosition(UnityEngine.Vector3&)
+        INTERNAL_get_rootPosition(UnityEngine.Vector3&)
+        INTERNAL_get_rootRotation(UnityEngine.Quaternion&)
+        INTERNAL_get_targetPosition(UnityEngine.Vector3&)
+        INTERNAL_get_targetRotation(UnityEngine.Quaternion&)
+        INTERNAL_get_velocity(UnityEngine.Vector3&)
+        INTERNAL_set_rootPosition(UnityEngine.Vector3&)
+        INTERNAL_set_rootRotation(UnityEngine.Quaternion&)
+        InternalGetBehaviours(System.Type)
+        InternalGetBehavioursByKey(System.Int32,System.Int32,System.Type)
+        InternalGetCurrentGraph(UnityEngine.Playables.PlayableGraph&)
+        InterruptMatchTarget()
+        InterruptMatchTarget(System.Boolean)
+        IsBoneTransform(UnityEngine.Transform)
+        IsControlled(UnityEngine.Transform)
+        IsInTransition(System.Int32)
+        IsParameterControlledByCurve(System.Int32)
+        IsParameterControlledByCurve(System.String)
+        IsParameterControlledByCurveID(System.Int32)
+        IsParameterControlledByCurveString(System.String)
+        MatchTarget(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.AvatarTarget,UnityEngine.MatchTargetWeightMask,System.Single)
+        MatchTarget(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.AvatarTarget,UnityEngine.MatchTargetWeightMask,System.Single,System.Single)
+        Play(System.Int32)
+        Play(System.Int32,System.Int32)
+        Play(System.Int32,System.Int32,System.Single)
+        Play(System.String)
+        Play(System.String,System.Int32)
+        Play(System.String,System.Int32,System.Single)
+        PlayInFixedTime(System.Int32)
+        PlayInFixedTime(System.Int32,System.Int32)
+        PlayInFixedTime(System.Int32,System.Int32,System.Single)
+        PlayInFixedTime(System.String)
+        PlayInFixedTime(System.String,System.Int32)
+        PlayInFixedTime(System.String,System.Int32,System.Single)
+        Rebind()
+        ResetTrigger(System.Int32)
+        ResetTriggerID(System.Int32)
+        ResolveHash(System.Int32)
+        set_allowConstantClipSamplingOptimization(System.Boolean)
+        set_animatePhysics(System.Boolean)
+        set_applyRootMotion(System.Boolean)
+        set_avatar(UnityEngine.Avatar)
+        set_bodyPosition(UnityEngine.Vector3)
+        set_bodyRotation(UnityEngine.Quaternion)
+        set_cullingMode(UnityEngine.AnimatorCullingMode)
+        set_feetPivotActive(System.Single)
+        set_fireEvents(System.Boolean)
+        set_layersAffectMassCenter(System.Boolean)
+        set_linearVelocityBlending(System.Boolean)
+        set_logWarnings(System.Boolean)
+        set_playbackTime(System.Single)
+        set_recorderStartTime(System.Single)
+        set_recorderStopTime(System.Single)
+        set_rootPosition(UnityEngine.Vector3)
+        set_rootRotation(UnityEngine.Quaternion)
+        set_runtimeAnimatorController(UnityEngine.RuntimeAnimatorController)
+        set_speed(System.Single)
+        set_stabilizeFeet(System.Boolean)
+        set_updateMode(UnityEngine.AnimatorUpdateMode)
+        SetBodyPositionInternal(UnityEngine.Vector3)
+        SetBodyRotationInternal(UnityEngine.Quaternion)
+        SetBoneLocalRotation(UnityEngine.HumanBodyBones,UnityEngine.Quaternion)
+        SetBoneLocalRotationInternal(System.Int32,UnityEngine.Quaternion)
+        SetBool(System.Int32,System.Boolean)
+        SetBool(System.String,System.Boolean)
+        SetBoolID(System.Int32,System.Boolean)
+        SetBoolString(System.String,System.Boolean)
+        SetFloat(System.Int32,System.Single)
+        SetFloat(System.Int32,System.Single,System.Single,System.Single)
+        SetFloat(System.String,System.Single)
+        SetFloat(System.String,System.Single,System.Single,System.Single)
+        SetFloatID(System.Int32,System.Single)
+        SetFloatIDDamp(System.Int32,System.Single,System.Single,System.Single)
+        SetFloatString(System.String,System.Single)
+        SetFloatStringDamp(System.String,System.Single,System.Single,System.Single)
+        SetIKHintPosition(UnityEngine.AvatarIKHint,UnityEngine.Vector3)
+        SetIKHintPositionInternal(UnityEngine.AvatarIKHint,UnityEngine.Vector3)
+        SetIKHintPositionWeight(UnityEngine.AvatarIKHint,System.Single)
+        SetIKHintPositionWeightInternal(UnityEngine.AvatarIKHint,System.Single)
+        SetIKPosition(UnityEngine.AvatarIKGoal,UnityEngine.Vector3)
+        SetIKPositionInternal(UnityEngine.AvatarIKGoal,UnityEngine.Vector3)
+        SetIKPositionWeight(UnityEngine.AvatarIKGoal,System.Single)
+        SetIKPositionWeightInternal(UnityEngine.AvatarIKGoal,System.Single)
+        SetIKRotation(UnityEngine.AvatarIKGoal,UnityEngine.Quaternion)
+        SetIKRotationInternal(UnityEngine.AvatarIKGoal,UnityEngine.Quaternion)
+        SetIKRotationWeight(UnityEngine.AvatarIKGoal,System.Single)
+        SetIKRotationWeightInternal(UnityEngine.AvatarIKGoal,System.Single)
+        SetInteger(System.Int32,System.Int32)
+        SetInteger(System.String,System.Int32)
+        SetIntegerID(System.Int32,System.Int32)
+        SetIntegerString(System.String,System.Int32)
+        SetLayerWeight(System.Int32,System.Single)
+        SetLookAtPosition(UnityEngine.Vector3)
+        SetLookAtPositionInternal(UnityEngine.Vector3)
+        SetLookAtWeight(System.Single)
+        SetLookAtWeight(System.Single,System.Single)
+        SetLookAtWeight(System.Single,System.Single,System.Single)
+        SetLookAtWeight(System.Single,System.Single,System.Single,System.Single)
+        SetLookAtWeight(System.Single,System.Single,System.Single,System.Single,System.Single)
+        SetLookAtWeightInternal(System.Single)
+        SetLookAtWeightInternal(System.Single,System.Single)
+        SetLookAtWeightInternal(System.Single,System.Single,System.Single)
+        SetLookAtWeightInternal(System.Single,System.Single,System.Single,System.Single)
+        SetLookAtWeightInternal(System.Single,System.Single,System.Single,System.Single,System.Single)
+        SetQuaternion(System.Int32,UnityEngine.Quaternion)
+        SetQuaternion(System.String,UnityEngine.Quaternion)
+        SetTarget(UnityEngine.AvatarTarget,System.Single)
+        SetTrigger(System.Int32)
+        SetTriggerID(System.Int32)
+        SetVector(System.Int32,UnityEngine.Vector3)
+        SetVector(System.String,UnityEngine.Vector3)
+        StartPlayback()
+        StartRecording(System.Int32)
+        StopPlayback()
+        StopRecording()
+        StringToHash(System.String)
+        Update(System.Single)
     UnityEngine.AnimatorClipInfo
         ClipInstanceToScriptingObject(System.Int32)
         get_clip()
@@ -10548,16 +10709,16 @@ Summary:
 Assembly: UnityEngine.CoreModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 462
-    Nested = 11
+  Total Type Removals = 417
+    Nested = 9
     Interfaces = 10
-    Abstract Classes = 16
+    Abstract Classes = 14
     Generic Types = 5
     Generic Interfaces = 0
     Generic Abstract Classes = 0
-    Attributes = 57
-  Total Field Removals = 33
-  Total Method Removals = 2219
+    Attributes = 48
+  Total Field Removals = 32
+  Total Method Removals = 2450
   References Removed = 0
 ---------------------------------------------------
     AOT.MonoPInvokeCallbackAttribute
@@ -10584,6 +10745,8 @@ Summary:
     UnityEngine._AndroidJNIHelper
     UnityEngine.AccelerationEvent
     UnityEngine.AddComponentMenu
+        get_componentMenu()
+        get_componentOrder()
     UnityEngine.AndroidJavaClass
     UnityEngine.AndroidJavaException
     UnityEngine.AndroidJavaObject
@@ -10652,13 +10815,11 @@ Summary:
         get_internetReachability()
         get_isBatchmode()
         get_isConsolePlatform()
-        get_isEditor()
         get_isFocused()
         get_isHumanControllingUs()
         get_isLoadingLevel()
         get_isMobilePlatform()
         get_isPlayer()
-        get_isPlaying()
         get_isShowingSplashScreen()
         get_isTestRun()
         get_isWebPlayer()
@@ -10666,7 +10827,6 @@ Summary:
         get_loadedLevel()
         get_loadedLevelName()
         get_persistentDataPath()
-        get_platform()
         get_productName()
         get_runInBackground()
         get_sandboxType()
@@ -10760,9 +10920,6 @@ Summary:
     UnityEngine.AttributeHelperEngine
         .ctor()
     UnityEngine.BatteryStatus
-    UnityEngine.Behaviour
-        get_isActiveAndEnabled()
-        set_enabled(System.Boolean)
     UnityEngine.BillboardAsset
     UnityEngine.BillboardRenderer
     UnityEngine.Bindings.CodegenOptions
@@ -10792,16 +10949,11 @@ Summary:
     UnityEngine.BootConfigData
     UnityEngine.BoundingSphere
     UnityEngine.Bounds
-        .ctor(UnityEngine.Vector3,UnityEngine.Vector3)
         ClosestPoint(UnityEngine.Vector3)
         Contains(UnityEngine.Vector3)
         Encapsulate(UnityEngine.Bounds)
-        Encapsulate(UnityEngine.Vector3)
         Expand(System.Single)
         Expand(UnityEngine.Vector3)
-        get_max()
-        get_min()
-        get_size()
         INTERNAL_CALL_Internal_Contains(UnityEngine.Bounds&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_GetClosestPoint(UnityEngine.Bounds&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_IntersectRay(UnityEngine.Ray&,UnityEngine.Bounds&,System.Single&)
@@ -10813,14 +10965,8 @@ Summary:
         IntersectRay(UnityEngine.Ray)
         IntersectRay(UnityEngine.Ray,System.Single&)
         Intersects(UnityEngine.Bounds)
-        op_Equality(UnityEngine.Bounds,UnityEngine.Bounds)
-        op_Inequality(UnityEngine.Bounds,UnityEngine.Bounds)
-        set_center(UnityEngine.Vector3)
-        set_extents(UnityEngine.Vector3)
         set_max(UnityEngine.Vector3)
         set_min(UnityEngine.Vector3)
-        set_size(UnityEngine.Vector3)
-        SetMinMax(UnityEngine.Vector3,UnityEngine.Vector3)
         SqrDistance(UnityEngine.Vector3)
         ToString(System.String)
     UnityEngine.BoundsInt
@@ -10829,7 +10975,6 @@ Summary:
     UnityEngine.CacheIndex
     UnityEngine.Caching
     UnityEngine.Camera
-        .ctor()
         AddCommandBuffer(UnityEngine.Rendering.CameraEvent,UnityEngine.Rendering.CommandBuffer)
         CalculateFrustumCorners(UnityEngine.Rect,System.Single,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3[])
         CalculateFrustumCornersInternal(UnityEngine.Rect,System.Single,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3[])
@@ -10849,7 +10994,6 @@ Summary:
         get_commandBufferCount()
         get_cullingMatrix()
         get_current()
-        get_depth()
         get_depthTextureMode()
         get_far()
         get_fieldOfView()
@@ -10858,7 +11002,6 @@ Summary:
         get_hdr()
         get_layerCullDistances()
         get_layerCullSpherical()
-        get_main()
         get_near()
         get_nonJitteredProjectionMatrix()
         get_opaqueSortMode()
@@ -10878,7 +11021,6 @@ Summary:
         get_stereoMirrorMode()
         get_stereoSeparation()
         get_stereoTargetEye()
-        get_targetDisplay()
         get_transparencySortAxis()
         get_transparencySortMode()
         get_useJitteredProjectionMatrixForTransparentRendering()
@@ -10901,7 +11043,6 @@ Summary:
         INTERNAL_CALL_ResetProjectionMatrix(UnityEngine.Camera)
         INTERNAL_CALL_ResetReplacementShader(UnityEngine.Camera)
         INTERNAL_CALL_ResetWorldToCameraMatrix(UnityEngine.Camera)
-        INTERNAL_CALL_ScreenToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_ScreenToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_SetStereoProjectionMatrices(UnityEngine.Camera,UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_SetStereoProjectionMatrix(UnityEngine.Camera,UnityEngine.Camera/StereoscopicEye,UnityEngine.Matrix4x4&)
@@ -10956,7 +11097,6 @@ Summary:
         ResetStereoViewMatrices()
         ResetTransparencySortSettings()
         ResetWorldToCameraMatrix()
-        ScreenToViewportPoint(UnityEngine.Vector3)
         ScreenToWorldPoint(UnityEngine.Vector3)
         set_allowHDR(System.Boolean)
         set_allowMSAA(System.Boolean)
@@ -11037,9 +11177,7 @@ Summary:
         .ctor()
     UnityEngine.Color
         AlphaMultiplied(System.Single)
-        get_black()
         get_blue()
-        get_clear()
         get_cyan()
         get_gamma()
         get_gray()
@@ -11054,15 +11192,12 @@ Summary:
         get_yellow()
         HSVToRGB(System.Single,System.Single,System.Single)
         HSVToRGB(System.Single,System.Single,System.Single,System.Boolean)
-        Lerp(UnityEngine.Color,UnityEngine.Color,System.Single)
         LerpUnclamped(UnityEngine.Color,UnityEngine.Color,System.Single)
         op_Addition(UnityEngine.Color,UnityEngine.Color)
         op_Division(UnityEngine.Color,System.Single)
-        op_Equality(UnityEngine.Color,UnityEngine.Color)
         op_Implicit(UnityEngine.Vector4)
         op_Inequality(UnityEngine.Color,UnityEngine.Color)
         op_Multiply(System.Single,UnityEngine.Color)
-        op_Multiply(UnityEngine.Color,System.Single)
         op_Multiply(UnityEngine.Color,UnityEngine.Color)
         op_Subtraction(UnityEngine.Color,UnityEngine.Color)
         RGBMultiplied(System.Single)
@@ -11072,6 +11207,9 @@ Summary:
         set_Item(System.Int32,System.Single)
         ToString(System.String)
     UnityEngine.Color32
+        Lerp(UnityEngine.Color32,UnityEngine.Color32,System.Single)
+        LerpUnclamped(UnityEngine.Color32,UnityEngine.Color32,System.Single)
+        ToString(System.String)
     UnityEngine.ColorGamut
     UnityEngine.ColorSpace
     UnityEngine.ColorUsageAttribute
@@ -11086,31 +11224,17 @@ Summary:
         BroadcastMessage(System.String,UnityEngine.SendMessageOptions)
         CompareTag(System.String)
         get_tag()
-        get_transform()
         GetComponent(System.String)
-        GetComponent(System.Type)
         GetComponentInChildren(System.Type)
-        GetComponentInChildren(System.Type,System.Boolean)
-        GetComponentInChildren<T>()
-        GetComponentInChildren<T>(System.Boolean)
-        GetComponentInParent(System.Type)
-        GetComponentInParent<T>()
         GetComponents(System.Type)
-        GetComponents(System.Type,System.Collections.Generic.List`1<UnityEngine.Component>)
-        GetComponents<T>()
-        GetComponents<T>(System.Collections.Generic.List`1<T>)
-        GetComponentsForListInternal(System.Type,System.Object)
         GetComponentsInChildren(System.Type)
         GetComponentsInChildren(System.Type,System.Boolean)
         GetComponentsInChildren<T>()
         GetComponentsInChildren<T>(System.Boolean)
-        GetComponentsInChildren<T>(System.Boolean,System.Collections.Generic.List`1<T>)
-        GetComponentsInChildren<T>(System.Collections.Generic.List`1<T>)
         GetComponentsInParent(System.Type)
         GetComponentsInParent(System.Type,System.Boolean)
         GetComponentsInParent<T>()
         GetComponentsInParent<T>(System.Boolean)
-        GetComponentsInParent<T>(System.Boolean,System.Collections.Generic.List`1<T>)
         SendMessage(System.String)
         SendMessage(System.String,System.Object)
         SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
@@ -11131,8 +11255,6 @@ Summary:
         .ctor(System.String,System.Boolean)
         .ctor(System.String,System.Boolean,System.Int32)
     UnityEngine.ContextMenuItemAttribute
-    UnityEngine.Coroutine
-        .ctor()
     UnityEngine.CrashReport
     UnityEngine.CreateAssetMenuAttribute
     UnityEngine.CSSLayout.CSSAlign
@@ -11271,14 +11393,19 @@ Summary:
         get_wasVisible()
     UnityEngine.CullingQueryOptions
     UnityEngine.Cursor
-    UnityEngine.CursorLockMode
+        .ctor()
+        get_visible()
+        INTERNAL_CALL_SetCursor(UnityEngine.Texture2D,UnityEngine.Vector2&,UnityEngine.CursorMode)
+        set_lockState(UnityEngine.CursorLockMode)
+        set_visible(System.Boolean)
+        SetCursor(UnityEngine.Texture2D,UnityEngine.CursorMode)
+        SetCursor(UnityEngine.Texture2D,UnityEngine.Vector2,UnityEngine.CursorMode)
     UnityEngine.CursorMode
     UnityEngine.CustomRenderTexture
     UnityEngine.CustomRenderTextureInitializationSource
     UnityEngine.CustomRenderTextureUpdateMode
     UnityEngine.CustomRenderTextureUpdateZone
     UnityEngine.CustomRenderTextureUpdateZoneSpace
-    UnityEngine.CustomYieldInstruction
     UnityEngine.Debug
         .ctor()
         Assert(System.Boolean)
@@ -11312,23 +11439,13 @@ Summary:
         LogAssertion(System.Object,UnityEngine.Object)
         LogAssertionFormat(System.String,System.Object[])
         LogAssertionFormat(UnityEngine.Object,System.String,System.Object[])
-        LogError(System.Object,UnityEngine.Object)
         LogErrorFormat(System.String,System.Object[])
-        LogErrorFormat(UnityEngine.Object,System.String,System.Object[])
-        LogException(System.Exception)
-        LogException(System.Exception,UnityEngine.Object)
         LogFormat(System.String,System.Object[])
         LogFormat(UnityEngine.Object,System.String,System.Object[])
-        LogWarning(System.Object)
-        LogWarning(System.Object,UnityEngine.Object)
         LogWarningFormat(System.String,System.Object[])
-        LogWarningFormat(UnityEngine.Object,System.String,System.Object[])
         OpenConsoleFile()
         set_developerConsoleVisible(System.Boolean)
         SetDiagnosticSwitch(System.String,System.Object,System.Boolean)
-    UnityEngine.DebugLogHandler
-        Internal_LogException(System.Exception,UnityEngine.Object)
-        LogException(System.Exception,UnityEngine.Object)
     UnityEngine.DefaultExecutionOrder
         .ctor(System.Int32)
         set_order(System.Int32)
@@ -11340,8 +11457,6 @@ Summary:
     UnityEngine.DiagnosticSwitch
     UnityEngine.DiagnosticSwitchFlags
     UnityEngine.DisableBatchingType
-    UnityEngine.DisallowMultipleComponent
-        .ctor()
     UnityEngine.Display
         Activate()
         Activate(System.Int32,System.Int32,System.Int32)
@@ -11351,17 +11466,9 @@ Summary:
         get_colorBuffer()
         get_depthBuffer()
         get_main()
-        get_renderingHeight()
-        get_renderingWidth()
-        get_systemHeight()
-        get_systemWidth()
         GetActiveImp(System.IntPtr)
         GetRenderingBuffersImpl(System.IntPtr,UnityEngine.RenderBuffer&,UnityEngine.RenderBuffer&)
-        GetRenderingExtImpl(System.IntPtr,System.Int32&,System.Int32&)
-        GetSystemExtImpl(System.IntPtr,System.Int32&,System.Int32&)
         MultiDisplayLicense()
-        RelativeMouseAt(UnityEngine.Vector3)
-        RelativeMouseAtImpl(System.Int32,System.Int32,System.Int32&,System.Int32&)
         remove_onDisplaysUpdated(UnityEngine.Display/DisplaysUpdatedDelegate)
         SetParams(System.Int32,System.Int32,System.Int32,System.Int32)
         SetParamsImpl(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)
@@ -11369,49 +11476,32 @@ Summary:
         SetRenderingResolutionImpl(System.IntPtr,System.Int32,System.Int32)
     UnityEngine.DrivenPropertyManager
     UnityEngine.DrivenRectTransformTracker
-    UnityEngine.DrivenTransformProperties
+        CanRecordModifications()
+        Clear()
     UnityEngine.DynamicGI
     UnityEngine.EnumInfo
     UnityEngine.EventProvider
     UnityEngine.Events.ArgumentCache
-        OnAfterDeserialize()
-        OnBeforeSerialize()
         set_boolArgument(System.Boolean)
         set_floatArgument(System.Single)
         set_intArgument(System.Int32)
         set_stringArgument(System.String)
         set_unityObjectArgument(UnityEngine.Object)
-        TidyAssemblyTypeName()
-    UnityEngine.Events.BaseInvokableCall
-        .ctor()
-        Find(System.Object,System.Reflection.MethodInfo)
-    UnityEngine.Events.InvokableCall
-        .ctor(UnityEngine.Events.UnityAction)
-        Find(System.Object,System.Reflection.MethodInfo)
-    UnityEngine.Events.InvokableCall`1
-        .ctor(UnityEngine.Events.UnityAction`1<T1>)
-        Find(System.Object,System.Reflection.MethodInfo)
     UnityEngine.Events.InvokableCall`2
         .ctor(UnityEngine.Events.UnityAction`2<T1,T2>)
         add_Delegate(UnityEngine.Events.UnityAction`2<T1,T2>)
-        Find(System.Object,System.Reflection.MethodInfo)
         remove_Delegate(UnityEngine.Events.UnityAction`2<T1,T2>)
     UnityEngine.Events.InvokableCall`3
         .ctor(UnityEngine.Events.UnityAction`3<T1,T2,T3>)
         add_Delegate(UnityEngine.Events.UnityAction`3<T1,T2,T3>)
-        Find(System.Object,System.Reflection.MethodInfo)
         remove_Delegate(UnityEngine.Events.UnityAction`3<T1,T2,T3>)
     UnityEngine.Events.InvokableCall`4
         .ctor(UnityEngine.Events.UnityAction`4<T1,T2,T3,T4>)
         add_Delegate(UnityEngine.Events.UnityAction`4<T1,T2,T3,T4>)
-        Find(System.Object,System.Reflection.MethodInfo)
         remove_Delegate(UnityEngine.Events.UnityAction`4<T1,T2,T3,T4>)
     UnityEngine.Events.InvokableCallList
-        AddListener(UnityEngine.Events.BaseInvokableCall)
         Clear()
-        ClearPersistent()
         get_Count()
-        RemoveListener(System.Object,System.Reflection.MethodInfo)
     UnityEngine.Events.PersistentCall
         get_callState()
         RegisterPersistentListener(UnityEngine.Object,System.String)
@@ -11436,14 +11526,7 @@ Summary:
         RemoveListeners(UnityEngine.Object,System.String)
         UnregisterPersistentListener(System.Int32)
     UnityEngine.Events.UnityEvent
-        AddListener(UnityEngine.Events.UnityAction)
-        GetDelegate(UnityEngine.Events.UnityAction)
-        Invoke()
         RemoveListener(UnityEngine.Events.UnityAction)
-    UnityEngine.Events.UnityEvent`1
-        AddListener(UnityEngine.Events.UnityAction`1<T0>)
-        GetDelegate(UnityEngine.Events.UnityAction`1<T0>)
-        RemoveListener(UnityEngine.Events.UnityAction`1<T0>)
     UnityEngine.Events.UnityEvent`2
         AddListener(UnityEngine.Events.UnityAction`2<T0,T1>)
         GetDelegate(UnityEngine.Events.UnityAction`2<T0,T1>)
@@ -11460,17 +11543,12 @@ Summary:
         Invoke(T0,T1,T2,T3)
         RemoveListener(UnityEngine.Events.UnityAction`4<T0,T1,T2,T3>)
     UnityEngine.Events.UnityEventBase
-        AddCall(UnityEngine.Events.BaseInvokableCall)
         AddListener(System.Object,System.Reflection.MethodInfo)
-        DirtyPersistentCalls()
         GetPersistentEventCount()
         GetPersistentMethodName(System.Int32)
         GetPersistentTarget(System.Int32)
         RemoveAllListeners()
-        RemoveListener(System.Object,System.Reflection.MethodInfo)
         SetPersistentListenerState(System.Int32,UnityEngine.Events.UnityEventCallState)
-        UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
-        UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
     UnityEngine.Experimental.Rendering.BlendState
     UnityEngine.Experimental.Rendering.CameraProperties
     UnityEngine.Experimental.Rendering.CoreCameraValues
@@ -11537,10 +11615,6 @@ Summary:
     UnityEngine.FullScreenMovieControlMode
     UnityEngine.FullScreenMovieScalingMode
     UnityEngine.GameObject
-        .ctor(System.String)
-        .ctor(System.String,System.Type[])
-        AddComponent(System.Type)
-        AddComponent<T>()
         AddComponentInternal(System.String)
         BroadcastMessage(System.String)
         BroadcastMessage(System.String,System.Object)
@@ -11548,48 +11622,30 @@ Summary:
         BroadcastMessage(System.String,UnityEngine.SendMessageOptions)
         CompareTag(System.String)
         CreatePrimitive(UnityEngine.PrimitiveType)
-        Find(System.String)
         FindGameObjectsWithTag(System.String)
         FindGameObjectWithTag(System.String)
         FindWithTag(System.String)
         get_active()
-        get_activeInHierarchy()
-        get_activeSelf()
         get_gameObject()
         get_isStatic()
         get_isStaticBatchable()
-        get_layer()
         get_scene()
         get_tag()
-        get_transform()
         GetComponent(System.String)
-        GetComponent(System.Type)
-        GetComponent<T>()
         GetComponentByName(System.String)
-        GetComponentFastPath(System.Type,System.IntPtr)
         GetComponentInChildren(System.Type)
-        GetComponentInChildren(System.Type,System.Boolean)
-        GetComponentInChildren<T>()
-        GetComponentInChildren<T>(System.Boolean)
-        GetComponentInParent(System.Type)
         GetComponentInParent<T>()
         GetComponents(System.Type)
         GetComponents(System.Type,System.Collections.Generic.List`1<UnityEngine.Component>)
-        GetComponents<T>()
-        GetComponents<T>(System.Collections.Generic.List`1<T>)
         GetComponentsInChildren(System.Type)
         GetComponentsInChildren(System.Type,System.Boolean)
         GetComponentsInChildren<T>()
         GetComponentsInChildren<T>(System.Boolean)
-        GetComponentsInChildren<T>(System.Boolean,System.Collections.Generic.List`1<T>)
         GetComponentsInChildren<T>(System.Collections.Generic.List`1<T>)
         GetComponentsInParent(System.Type)
         GetComponentsInParent(System.Type,System.Boolean)
         GetComponentsInParent<T>()
         GetComponentsInParent<T>(System.Boolean)
-        GetComponentsInParent<T>(System.Boolean,System.Collections.Generic.List`1<T>)
-        GetComponentsInternal(System.Type,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Object)
-        Internal_AddComponentWithType(System.Type)
         INTERNAL_get_scene(UnityEngine.SceneManagement.Scene&)
         SendMessage(System.String)
         SendMessage(System.String,System.Object)
@@ -11600,9 +11656,7 @@ Summary:
         SendMessageUpwards(System.String,UnityEngine.SendMessageOptions)
         set_active(System.Boolean)
         set_isStatic(System.Boolean)
-        set_layer(System.Int32)
         set_tag(System.String)
-        SetActive(System.Boolean)
         SetActiveRecursively(System.Boolean)
     UnityEngine.GeometryUtility
     UnityEngine.Gizmos
@@ -11669,7 +11723,6 @@ Summary:
         ClearReferenceValue(UnityEngine.PropertyName)
         GetReferenceValue(UnityEngine.PropertyName,System.Boolean&)
         SetReferenceValue(UnityEngine.PropertyName,UnityEngine.Object)
-    UnityEngine.IL2CPPStructAlignmentAttribute
     UnityEngine.ILogger
         get_filterLogType()
         get_logEnabled()
@@ -11678,7 +11731,6 @@ Summary:
         Log(System.Object)
         Log(System.String,System.Object)
         Log(System.String,System.Object,UnityEngine.Object)
-        Log(UnityEngine.LogType,System.Object,UnityEngine.Object)
         Log(UnityEngine.LogType,System.String,System.Object)
         Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)
         LogError(System.String,System.Object)
@@ -11690,12 +11742,9 @@ Summary:
         set_filterLogType(UnityEngine.LogType)
         set_logEnabled(System.Boolean)
         set_logHandler(UnityEngine.ILogHandler)
-    UnityEngine.ILogHandler
-        LogException(System.Exception,UnityEngine.Object)
     UnityEngine.ImageEffectAllowedInSceneView
     UnityEngine.ImageEffectOpaque
     UnityEngine.ImageEffectTransformsToLDR
-    UnityEngine.IMECompositionMode
     UnityEngine.Input
         compassInstance
         locationServiceInstance
@@ -11708,30 +11757,21 @@ Summary:
         get_backButtonLeavesApp()
         get_compass()
         get_compensateSensors()
-        get_compositionCursorPos()
-        get_compositionString()
         get_deviceOrientation()
         get_eatKeyPressOnTextFieldFocus()
         get_gyro()
-        get_imeCompositionMode()
         get_imeIsSelected()
         get_inputString()
         get_isGyroAvailable()
         get_location()
-        get_mousePresent()
-        get_mouseScrollDelta()
         get_multiTouchEnabled()
         get_simulateMouseWithTouches()
         get_stylusTouchSupported()
-        get_touchCount()
         get_touches()
         get_touchPressureSupported()
-        get_touchSupported()
         GetAccelerationEvent(System.Int32)
         GetAxis(System.String)
-        GetAxisRaw(System.String)
         GetButton(System.String)
-        GetButtonDown(System.String)
         GetButtonUp(System.String)
         GetJoystickNames()
         GetKey(System.String)
@@ -11746,21 +11786,13 @@ Summary:
         GetKeyUp(UnityEngine.KeyCode)
         GetKeyUpInt(System.Int32)
         GetKeyUpString(System.String)
-        GetMouseButtonUp(System.Int32)
-        GetTouch(System.Int32)
         INTERNAL_CALL_GetAccelerationEvent(System.Int32,UnityEngine.AccelerationEvent&)
-        INTERNAL_CALL_GetTouch(System.Int32,UnityEngine.Touch&)
         INTERNAL_get_acceleration(UnityEngine.Vector3&)
-        INTERNAL_get_compositionCursorPos(UnityEngine.Vector2&)
-        INTERNAL_get_mouseScrollDelta(UnityEngine.Vector2&)
-        INTERNAL_set_compositionCursorPos(UnityEngine.Vector2&)
         mainGyroIndex_Internal()
         ResetInputAxes()
         set_backButtonLeavesApp(System.Boolean)
         set_compensateSensors(System.Boolean)
-        set_compositionCursorPos(UnityEngine.Vector2)
         set_eatKeyPressOnTextFieldFocus(System.Boolean)
-        set_imeCompositionMode(UnityEngine.IMECompositionMode)
         set_multiTouchEnabled(System.Boolean)
         set_simulateMouseWithTouches(System.Boolean)
     UnityEngine.Internal_DrawMeshMatrixArguments
@@ -11768,9 +11800,6 @@ Summary:
     UnityEngine.InternalStaticBatchingUtility
     UnityEngine.IPlayerEditorConnectionNative
     UnityEngine.IPPtrRemapper
-    UnityEngine.ISerializationCallbackReceiver
-        OnAfterDeserialize()
-        OnBeforeSerialize()
     UnityEngine.ISerializedStateReader
     UnityEngine.ISerializedStateWriter
     UnityEngine.IUnitySerializable
@@ -11798,7 +11827,6 @@ Summary:
         GetMask(System.String[])
         LayerToName(System.Int32)
         NameToLayer(System.String)
-        op_Implicit(UnityEngine.LayerMask)
         set_value(System.Int32)
     UnityEngine.LensFlare
     UnityEngine.Light
@@ -11830,17 +11858,153 @@ Summary:
         Log(System.Object)
         Log(System.String,System.Object)
         Log(System.String,System.Object,UnityEngine.Object)
-        Log(UnityEngine.LogType,System.Object,UnityEngine.Object)
         Log(UnityEngine.LogType,System.String,System.Object)
         Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)
         LogError(System.String,System.Object)
         LogError(System.String,System.Object,UnityEngine.Object)
         LogException(System.Exception)
-        LogException(System.Exception,UnityEngine.Object)
         LogFormat(UnityEngine.LogType,System.String,System.Object[])
         LogWarning(System.String,System.Object)
         LogWarning(System.String,System.Object,UnityEngine.Object)
     UnityEngine.Material
+        .ctor(System.String)
+        .ctor(UnityEngine.Shader)
+        CopyPropertiesFromMaterial(UnityEngine.Material)
+        Create(System.String)
+        ExtractArrayFromList(System.Object)
+        FindPass(System.String)
+        get_color()
+        get_doubleSidedGI()
+        get_enableInstancing()
+        get_globalIlluminationFlags()
+        get_mainTextureOffset()
+        get_mainTextureScale()
+        get_passCount()
+        get_renderQueue()
+        get_shader()
+        get_shaderKeywords()
+        GetColor(System.Int32)
+        GetColor(System.String)
+        GetColorArray(System.Int32)
+        GetColorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Color>)
+        GetColorArray(System.String)
+        GetColorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Color>)
+        GetColorArrayImpl(System.Int32)
+        GetColorArrayImplList(System.Int32,System.Object)
+        GetColorImpl(System.Int32)
+        GetFloat(System.Int32)
+        GetFloat(System.String)
+        GetFloatArray(System.Int32)
+        GetFloatArray(System.Int32,System.Collections.Generic.List`1<System.Single>)
+        GetFloatArray(System.String)
+        GetFloatArray(System.String,System.Collections.Generic.List`1<System.Single>)
+        GetFloatArrayImpl(System.Int32)
+        GetFloatArrayImplList(System.Int32,System.Object)
+        GetFloatImpl(System.Int32)
+        GetInt(System.Int32)
+        GetInt(System.String)
+        GetIntImpl(System.Int32)
+        GetMatrix(System.Int32)
+        GetMatrix(System.String)
+        GetMatrixArray(System.Int32)
+        GetMatrixArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        GetMatrixArray(System.String)
+        GetMatrixArray(System.String,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        GetMatrixArrayImpl(System.Int32)
+        GetMatrixArrayImplList(System.Int32,System.Object)
+        GetMatrixImpl(System.Int32)
+        GetPassName(System.Int32)
+        GetShaderPassEnabled(System.String)
+        GetTag(System.String,System.Boolean)
+        GetTag(System.String,System.Boolean,System.String)
+        GetTextureOffset(System.Int32)
+        GetTextureOffset(System.String)
+        GetTextureScale(System.Int32)
+        GetTextureScale(System.String)
+        GetTextureScaleAndOffsetImpl(System.Int32)
+        GetVector(System.Int32)
+        GetVector(System.String)
+        GetVectorArray(System.Int32)
+        GetVectorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        GetVectorArray(System.String)
+        GetVectorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        GetVectorArrayImpl(System.Int32)
+        GetVectorArrayImplList(System.Int32,System.Object)
+        GetVectorImpl(System.Int32)
+        INTERNAL_CALL_GetColorImpl(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+        INTERNAL_CALL_GetMatrixImpl(UnityEngine.Material,System.Int32,UnityEngine.Matrix4x4&)
+        INTERNAL_CALL_GetTextureScaleAndOffsetImpl(UnityEngine.Material,System.Int32,UnityEngine.Vector4&)
+        INTERNAL_CALL_GetVectorImpl(UnityEngine.Material,System.Int32,UnityEngine.Vector4&)
+        INTERNAL_CALL_SetColorImpl(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+        INTERNAL_CALL_SetMatrixImpl(UnityEngine.Material,System.Int32,UnityEngine.Matrix4x4&)
+        INTERNAL_CALL_SetTextureOffsetImpl(UnityEngine.Material,System.Int32,UnityEngine.Vector2&)
+        INTERNAL_CALL_SetTextureScaleImpl(UnityEngine.Material,System.Int32,UnityEngine.Vector2&)
+        INTERNAL_CALL_SetVectorImpl(UnityEngine.Material,System.Int32,UnityEngine.Vector4&)
+        Internal_CreateWithShader(UnityEngine.Material,UnityEngine.Shader)
+        Internal_CreateWithString(UnityEngine.Material,System.String)
+        IsKeywordEnabled(System.String)
+        Lerp(UnityEngine.Material,UnityEngine.Material,System.Single)
+        set_color(UnityEngine.Color)
+        set_doubleSidedGI(System.Boolean)
+        set_enableInstancing(System.Boolean)
+        set_globalIlluminationFlags(UnityEngine.MaterialGlobalIlluminationFlags)
+        set_mainTexture(UnityEngine.Texture)
+        set_mainTextureOffset(UnityEngine.Vector2)
+        set_mainTextureScale(UnityEngine.Vector2)
+        set_renderQueue(System.Int32)
+        set_shader(UnityEngine.Shader)
+        set_shaderKeywords(System.String[])
+        SetBuffer(System.Int32,UnityEngine.ComputeBuffer)
+        SetBuffer(System.String,UnityEngine.ComputeBuffer)
+        SetBufferImpl(System.Int32,UnityEngine.ComputeBuffer)
+        SetColor(System.Int32,UnityEngine.Color)
+        SetColor(System.String,UnityEngine.Color)
+        SetColorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Color>)
+        SetColorArray(System.Int32,UnityEngine.Color[])
+        SetColorArray(System.Int32,UnityEngine.Color[],System.Int32)
+        SetColorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Color>)
+        SetColorArray(System.String,UnityEngine.Color[])
+        SetColorArrayImpl(System.Int32,UnityEngine.Color[],System.Int32)
+        SetColorImpl(System.Int32,UnityEngine.Color)
+        SetFloat(System.Int32,System.Single)
+        SetFloat(System.String,System.Single)
+        SetFloatArray(System.Int32,System.Collections.Generic.List`1<System.Single>)
+        SetFloatArray(System.Int32,System.Single[])
+        SetFloatArray(System.Int32,System.Single[],System.Int32)
+        SetFloatArray(System.String,System.Collections.Generic.List`1<System.Single>)
+        SetFloatArray(System.String,System.Single[])
+        SetFloatArrayImpl(System.Int32,System.Single[],System.Int32)
+        SetFloatImpl(System.Int32,System.Single)
+        SetMatrix(System.Int32,UnityEngine.Matrix4x4)
+        SetMatrix(System.String,UnityEngine.Matrix4x4)
+        SetMatrixArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        SetMatrixArray(System.Int32,UnityEngine.Matrix4x4[])
+        SetMatrixArray(System.Int32,UnityEngine.Matrix4x4[],System.Int32)
+        SetMatrixArray(System.String,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        SetMatrixArray(System.String,UnityEngine.Matrix4x4[])
+        SetMatrixArrayImpl(System.Int32,UnityEngine.Matrix4x4[],System.Int32)
+        SetMatrixImpl(System.Int32,UnityEngine.Matrix4x4)
+        SetOverrideTag(System.String,System.String)
+        SetPass(System.Int32)
+        SetShaderPassEnabled(System.String,System.Boolean)
+        SetTexture(System.Int32,UnityEngine.Texture)
+        SetTexture(System.String,UnityEngine.Texture)
+        SetTextureImpl(System.Int32,UnityEngine.Texture)
+        SetTextureOffset(System.Int32,UnityEngine.Vector2)
+        SetTextureOffset(System.String,UnityEngine.Vector2)
+        SetTextureOffsetImpl(System.Int32,UnityEngine.Vector2)
+        SetTextureScale(System.Int32,UnityEngine.Vector2)
+        SetTextureScale(System.String,UnityEngine.Vector2)
+        SetTextureScaleImpl(System.Int32,UnityEngine.Vector2)
+        SetVector(System.Int32,UnityEngine.Vector4)
+        SetVector(System.String,UnityEngine.Vector4)
+        SetVectorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        SetVectorArray(System.Int32,UnityEngine.Vector4[])
+        SetVectorArray(System.Int32,UnityEngine.Vector4[],System.Int32)
+        SetVectorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        SetVectorArray(System.String,UnityEngine.Vector4[])
+        SetVectorArrayImpl(System.Int32,UnityEngine.Vector4[],System.Int32)
+        SetVectorImpl(System.Int32,UnityEngine.Vector4)
     UnityEngine.MaterialGlobalIlluminationFlags
     UnityEngine.MaterialPropertyBlock
     UnityEngine.Mathf
@@ -11855,21 +12019,15 @@ Summary:
         Atan(System.Single)
         Atan2(System.Single,System.Single)
         Ceil(System.Single)
-        CeilToInt(System.Single)
-        Clamp(System.Int32,System.Int32,System.Int32)
         ClosestPowerOfTwo(System.Int32)
         CorrelatedColorTemperatureToRGB(System.Single)
-        Cos(System.Single)
         DeltaAngle(System.Single,System.Single)
         Exp(System.Single)
         FloatToHalf(System.Single)
-        Floor(System.Single)
-        FloorToInt(System.Single)
         Gamma(System.Single,System.Single,System.Single)
         GammaToLinearSpace(System.Single)
         HalfToFloat(System.UInt16)
         INTERNAL_CALL_CorrelatedColorTemperatureToRGB(System.Single,UnityEngine.Color&)
-        InverseLerp(System.Single,System.Single,System.Single)
         IsPowerOfTwo(System.Int32)
         LerpAngle(System.Single,System.Single,System.Single)
         LerpUnclamped(System.Single,System.Single,System.Single)
@@ -11877,7 +12035,6 @@ Summary:
         LineIntersection(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2&)
         LineSegmentIntersection(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2&)
         Log(System.Single)
-        Log(System.Single,System.Single)
         Log10(System.Single)
         Max(System.Int32[])
         Max(System.Single[])
@@ -11888,15 +12045,9 @@ Summary:
         NextPowerOfTwo(System.Int32)
         PerlinNoise(System.Single,System.Single)
         PingPong(System.Single,System.Single)
-        Pow(System.Single,System.Single)
         RandomToLong(System.Random)
-        Repeat(System.Single,System.Single)
-        RoundToInt(System.Single)
-        Sign(System.Single)
-        Sin(System.Single)
         SmoothDamp(System.Single,System.Single,System.Single&,System.Single)
         SmoothDamp(System.Single,System.Single,System.Single&,System.Single,System.Single)
-        SmoothDamp(System.Single,System.Single,System.Single&,System.Single,System.Single,System.Single)
         SmoothDampAngle(System.Single,System.Single,System.Single&,System.Single)
         SmoothDampAngle(System.Single,System.Single,System.Single&,System.Single,System.Single)
         SmoothDampAngle(System.Single,System.Single,System.Single&,System.Single,System.Single,System.Single)
@@ -11934,7 +12085,6 @@ Summary:
         Invert(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4&)
         LookAt(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
         MultiplyPoint(UnityEngine.Vector3)
-        MultiplyPoint3x4(UnityEngine.Vector3)
         MultiplyVector(UnityEngine.Vector3)
         op_Equality(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
         op_Inequality(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
@@ -11956,6 +12106,96 @@ Summary:
         TRS(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
         ValidTRS()
     UnityEngine.Mesh
+        AddBlendShapeFrame(System.String,System.Single,UnityEngine.Vector3[],UnityEngine.Vector3[],UnityEngine.Vector3[])
+        ClearBlendShapes()
+        CombineMeshes(UnityEngine.CombineInstance[])
+        CombineMeshes(UnityEngine.CombineInstance[],System.Boolean)
+        CombineMeshes(UnityEngine.CombineInstance[],System.Boolean,System.Boolean)
+        CombineMeshes(UnityEngine.CombineInstance[],System.Boolean,System.Boolean,System.Boolean)
+        get_bindposes()
+        get_blendShapeCount()
+        get_boneWeights()
+        get_bounds()
+        get_colors()
+        get_isReadable()
+        get_triangles()
+        get_vertexBufferCount()
+        get_vertexCount()
+        GetArrayFromChannelImpl(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,System.Array)
+        GetBindposeCount()
+        GetBindposes(System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        GetBindposesNonAllocImpl(System.Object)
+        GetBlendShapeFrameCount(System.Int32)
+        GetBlendShapeFrameVertices(System.Int32,System.Int32,UnityEngine.Vector3[],UnityEngine.Vector3[],UnityEngine.Vector3[])
+        GetBlendShapeFrameWeight(System.Int32,System.Int32)
+        GetBlendShapeIndex(System.String)
+        GetBlendShapeName(System.Int32)
+        GetBoneWeights(System.Collections.Generic.List`1<UnityEngine.BoneWeight>)
+        GetBoneWeightsNonAllocImpl(System.Object)
+        GetColors(System.Collections.Generic.List`1<UnityEngine.Color>)
+        GetColors(System.Collections.Generic.List`1<UnityEngine.Color32>)
+        GetIndexCount(System.Int32)
+        GetIndexCountImpl(System.Int32)
+        GetIndexStart(System.Int32)
+        GetIndexStartImpl(System.Int32)
+        GetIndices(System.Collections.Generic.List`1<System.Int32>,System.Int32)
+        GetIndicesNonAllocImpl(System.Object,System.Int32)
+        GetListForChannel<T>(System.Collections.Generic.List`1<T>,System.Int32,UnityEngine.Mesh/InternalShaderChannel,System.Int32)
+        GetListForChannel<T>(System.Collections.Generic.List`1<T>,System.Int32,UnityEngine.Mesh/InternalShaderChannel,System.Int32,UnityEngine.Mesh/InternalVertexChannelType)
+        GetNativeIndexBufferPtr()
+        GetNativeVertexBufferPtr(System.Int32)
+        GetNormals(System.Collections.Generic.List`1<UnityEngine.Vector3>)
+        GetTangents(System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        GetTopology(System.Int32)
+        GetTriangles(System.Collections.Generic.List`1<System.Int32>,System.Int32)
+        GetTriangles(System.Int32)
+        GetTrianglesImpl(System.Int32)
+        GetTrianglesNonAllocImpl(System.Object,System.Int32)
+        GetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector2>)
+        GetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector3>)
+        GetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        GetUVsImpl<T>(System.Int32,System.Collections.Generic.List`1<T>,System.Int32)
+        GetVertices(System.Collections.Generic.List`1<UnityEngine.Vector3>)
+        INTERNAL_get_bounds(UnityEngine.Bounds&)
+        INTERNAL_set_bounds(UnityEngine.Bounds&)
+        MarkDynamic()
+        MarkDynamicImpl()
+        Optimize()
+        PrepareUserBuffer<T>(System.Collections.Generic.List`1<T>,System.Int32)
+        RecalculateNormals()
+        RecalculateNormalsImpl()
+        RecalculateTangents()
+        RecalculateTangentsImpl()
+        ResizeList(System.Object,System.Int32)
+        SafeLength(System.Array)
+        set_bindposes(UnityEngine.Matrix4x4[])
+        set_boneWeights(UnityEngine.BoneWeight[])
+        set_bounds(UnityEngine.Bounds)
+        set_colors(UnityEngine.Color[])
+        set_colors32(UnityEngine.Color32[])
+        set_normals(UnityEngine.Vector3[])
+        set_subMeshCount(System.Int32)
+        set_tangents(UnityEngine.Vector4[])
+        set_triangles(System.Int32[])
+        set_uv(UnityEngine.Vector2[])
+        set_uv2(UnityEngine.Vector2[])
+        set_uv3(UnityEngine.Vector2[])
+        set_uv4(UnityEngine.Vector2[])
+        set_vertices(UnityEngine.Vector3[])
+        SetArrayForChannel<T>(UnityEngine.Mesh/InternalShaderChannel,T[])
+        SetArrayForChannel<T>(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,T[])
+        SetColors(System.Collections.Generic.List`1<UnityEngine.Color>)
+        SetIndices(System.Int32[],UnityEngine.MeshTopology,System.Int32)
+        SetIndices(System.Int32[],UnityEngine.MeshTopology,System.Int32,System.Boolean)
+        SetIndicesImpl(System.Int32,UnityEngine.MeshTopology,System.Array,System.Int32)
+        SetIndicesImpl(System.Int32,UnityEngine.MeshTopology,System.Array,System.Int32,System.Boolean)
+        SetTriangles(System.Int32[],System.Int32)
+        SetTriangles(System.Int32[],System.Int32,System.Boolean)
+        SetTrianglesImpl(System.Int32,System.Array,System.Int32)
+        SetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector3>)
+        SetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        UploadMeshData(System.Boolean)
+        UploadMeshDataImpl(System.Boolean)
     UnityEngine.MeshFilter
         .ctor()
         get_mesh()
@@ -11968,7 +12208,6 @@ Summary:
     UnityEngine.MissingComponentException
     UnityEngine.MissingReferenceException
     UnityEngine.MonoBehaviour
-        .ctor()
         CancelInvoke()
         CancelInvoke(System.String)
         get_useGUILayout()
@@ -11981,17 +12220,11 @@ Summary:
         IsInvoking(System.String)
         print(System.Object)
         set_useGUILayout(System.Boolean)
-        StartCoroutine(System.Collections.IEnumerator)
         StartCoroutine(System.String)
         StartCoroutine(System.String,System.Object)
         StartCoroutine_Auto(System.Collections.IEnumerator)
-        StartCoroutine_Auto_Internal(System.Collections.IEnumerator)
         StopAllCoroutines()
-        StopCoroutine(System.Collections.IEnumerator)
         StopCoroutine(System.String)
-        StopCoroutine(UnityEngine.Coroutine)
-        StopCoroutine_Auto(UnityEngine.Coroutine)
-        StopCoroutineViaEnumerator_Auto(System.Collections.IEnumerator)
     UnityEngine.MotionVectorGenerationMode
     UnityEngine.MultilineAttribute
     UnityEngine.NativeClassAttribute
@@ -12026,11 +12259,6 @@ Summary:
     UnityEngine.NetworkReachability
     UnityEngine.NPOTSupport
     UnityEngine.Object
-        CheckNullArgument(System.Object,System.String)
-        Destroy(UnityEngine.Object)
-        Destroy(UnityEngine.Object,System.Single)
-        DestroyImmediate(UnityEngine.Object)
-        DestroyImmediate(UnityEngine.Object,System.Boolean)
         DestroyObject(UnityEngine.Object)
         DestroyObject(UnityEngine.Object,System.Single)
         DoesObjectWithInstanceIDExist(System.Int32)
@@ -12043,7 +12271,6 @@ Summary:
         FindObjectsOfTypeIncludingAssets(System.Type)
         FindSceneObjectsOfType(System.Type)
         get_hideFlags()
-        get_name()
         GetInstanceID()
         GetOffsetOfInstanceIDInCPlusPlusObject()
         Instantiate(UnityEngine.Object)
@@ -12051,23 +12278,36 @@ Summary:
         Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
         Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
         Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
-        Instantiate<T>(T)
         Instantiate<T>(T,UnityEngine.Transform)
         Instantiate<T>(T,UnityEngine.Transform,System.Boolean)
         Instantiate<T>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
         Instantiate<T>(T,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
         INTERNAL_CALL_Internal_InstantiateSingle(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Internal_InstantiateSingleWithParent(UnityEngine.Object,UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Quaternion&)
-        Internal_CloneSingle(UnityEngine.Object)
         Internal_CloneSingleWithParent(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
         Internal_InstantiateSingle(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
         Internal_InstantiateSingleWithParent(UnityEngine.Object,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
-        set_name(System.String)
     UnityEngine.OcclusionArea
     UnityEngine.OcclusionPortal
-    UnityEngine.OperatingSystemFamily
     UnityEngine.Ping
     UnityEngine.Plane
+        .ctor(UnityEngine.Vector3,System.Single)
+        .ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+        ClosestPointOnPlane(UnityEngine.Vector3)
+        Flip()
+        get_distance()
+        get_flipped()
+        get_normal()
+        GetDistanceToPoint(UnityEngine.Vector3)
+        GetSide(UnityEngine.Vector3)
+        SameSide(UnityEngine.Vector3,UnityEngine.Vector3)
+        set_distance(System.Single)
+        set_normal(UnityEngine.Vector3)
+        Set3Points(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+        SetNormalAndPosition(UnityEngine.Vector3,UnityEngine.Vector3)
+        ToString(System.String)
+        Translate(UnityEngine.Plane,UnityEngine.Vector3)
+        Translate(UnityEngine.Vector3)
     UnityEngine.Playables.DirectorUpdateMode
     UnityEngine.Playables.FrameData
     UnityEngine.Playables.IPlayable
@@ -12350,6 +12590,9 @@ Summary:
     UnityEngine.Profiling.Sampler
     UnityEngine.Projector
     UnityEngine.PropertyAttribute
+        <order>k__BackingField
+        get_order()
+        set_order(System.Int32)
     UnityEngine.PropertyName
         IsNullOrEmpty(UnityEngine.PropertyName)
     UnityEngine.PropertyNameUtils
@@ -12359,9 +12602,7 @@ Summary:
     UnityEngine.Quaternion
         kEpsilon
         Angle(UnityEngine.Quaternion,UnityEngine.Quaternion)
-        AngleAxis(System.Single,UnityEngine.Vector3)
         AxisAngle(UnityEngine.Vector3,System.Single)
-        Dot(UnityEngine.Quaternion,UnityEngine.Quaternion)
         Euler(System.Single,System.Single,System.Single)
         Euler(UnityEngine.Vector3)
         EulerAngles(System.Single,System.Single,System.Single)
@@ -12372,13 +12613,11 @@ Summary:
         get_eulerAngles()
         get_identity()
         get_Item(System.Int32)
-        INTERNAL_CALL_AngleAxis(System.Single,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_AxisAngle(UnityEngine.Vector3&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_FromToRotation(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Internal_FromEulerRad(UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Internal_ToAxisAngleRad(UnityEngine.Quaternion&,UnityEngine.Vector3&,System.Single&)
         INTERNAL_CALL_Internal_ToEulerRad(UnityEngine.Quaternion&,UnityEngine.Vector3&)
-        INTERNAL_CALL_Inverse(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Lerp(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_LerpUnclamped(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_LookRotation(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
@@ -12388,13 +12627,10 @@ Summary:
         Internal_MakePositive(UnityEngine.Vector3)
         Internal_ToAxisAngleRad(UnityEngine.Quaternion,UnityEngine.Vector3&,System.Single&)
         Internal_ToEulerRad(UnityEngine.Quaternion)
-        Inverse(UnityEngine.Quaternion)
         Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LerpUnclamped(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LookRotation(UnityEngine.Vector3)
         LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
-        op_Equality(UnityEngine.Quaternion,UnityEngine.Quaternion)
-        op_Inequality(UnityEngine.Quaternion,UnityEngine.Quaternion)
         op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
         RotateTowards(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         Set(System.Single,System.Single,System.Single,System.Single)
@@ -12417,10 +12653,9 @@ Summary:
         ToEulerAngles(UnityEngine.Quaternion)
         ToString(System.String)
     UnityEngine.Random
-    UnityEngine.RangeAttribute
     UnityEngine.RangeInt
+        .ctor(System.Int32,System.Int32)
     UnityEngine.Ray
-        GetPoint(System.Single)
         set_direction(UnityEngine.Vector3)
         set_origin(UnityEngine.Vector3)
         ToString(System.String)
@@ -12428,25 +12663,14 @@ Summary:
     UnityEngine.Rect
         .ctor(UnityEngine.Rect)
         .ctor(UnityEngine.Vector2,UnityEngine.Vector2)
-        Contains(UnityEngine.Vector2)
         Contains(UnityEngine.Vector3,System.Boolean)
         get_bottom()
-        get_center()
         get_left()
-        get_max()
-        get_min()
-        get_position()
         get_right()
-        get_size()
         get_top()
         get_zero()
         MinMaxRect(System.Single,System.Single,System.Single,System.Single)
         NormalizedToPoint(UnityEngine.Rect,UnityEngine.Vector2)
-        op_Equality(UnityEngine.Rect,UnityEngine.Rect)
-        op_Inequality(UnityEngine.Rect,UnityEngine.Rect)
-        OrderMinMax(UnityEngine.Rect)
-        Overlaps(UnityEngine.Rect)
-        Overlaps(UnityEngine.Rect,System.Boolean)
         PointToNormalized(UnityEngine.Rect,UnityEngine.Vector2)
         Set(System.Single,System.Single,System.Single,System.Single)
         set_center(UnityEngine.Vector2)
@@ -12454,10 +12678,6 @@ Summary:
         set_min(UnityEngine.Vector2)
         set_position(UnityEngine.Vector2)
         set_size(UnityEngine.Vector2)
-        set_xMax(System.Single)
-        set_xMin(System.Single)
-        set_yMax(System.Single)
-        set_yMin(System.Single)
         ToString(System.String)
     UnityEngine.RectInt
     UnityEngine.RectOffset
@@ -12468,53 +12688,85 @@ Summary:
         Remove(UnityEngine.Rect)
     UnityEngine.RectTransform
         .ctor()
-        add_reapplyDrivenProperties(UnityEngine.RectTransform/ReapplyDrivenProperties)
         AddDrivenProperties(UnityEngine.Object,UnityEngine.DrivenTransformProperties)
         ClearDrivenProperties(UnityEngine.Object,System.Boolean)
-        get_anchoredPosition()
         get_anchoredPosition3D()
-        get_anchorMax()
-        get_anchorMin()
         get_offsetMax()
         get_offsetMin()
-        get_pivot()
-        get_rect()
-        get_sizeDelta()
-        GetLocalCorners(UnityEngine.Vector3[])
-        GetParentSize()
         GetRectInParentSpace()
-        GetWorldCorners(UnityEngine.Vector3[])
-        INTERNAL_get_anchoredPosition(UnityEngine.Vector2&)
-        INTERNAL_get_anchorMax(UnityEngine.Vector2&)
-        INTERNAL_get_anchorMin(UnityEngine.Vector2&)
-        INTERNAL_get_pivot(UnityEngine.Vector2&)
-        INTERNAL_get_rect(UnityEngine.Rect&)
-        INTERNAL_get_sizeDelta(UnityEngine.Vector2&)
-        INTERNAL_set_anchoredPosition(UnityEngine.Vector2&)
-        INTERNAL_set_anchorMax(UnityEngine.Vector2&)
-        INTERNAL_set_anchorMin(UnityEngine.Vector2&)
-        INTERNAL_set_pivot(UnityEngine.Vector2&)
-        INTERNAL_set_sizeDelta(UnityEngine.Vector2&)
         IsDriven()
         IsDriven(UnityEngine.DrivenTransformProperties)
-        remove_reapplyDrivenProperties(UnityEngine.RectTransform/ReapplyDrivenProperties)
-        set_anchoredPosition(UnityEngine.Vector2)
         set_anchoredPosition3D(UnityEngine.Vector3)
-        set_anchorMax(UnityEngine.Vector2)
-        set_anchorMin(UnityEngine.Vector2)
-        set_offsetMax(UnityEngine.Vector2)
-        set_offsetMin(UnityEngine.Vector2)
-        set_pivot(UnityEngine.Vector2)
-        set_sizeDelta(UnityEngine.Vector2)
-        SetInsetAndSizeFromParentEdge(UnityEngine.RectTransform/Edge,System.Single,System.Single)
-        SetSizeWithCurrentAnchors(UnityEngine.RectTransform/Axis,System.Single)
-    UnityEngine.RectTransform/Axis
-    UnityEngine.RectTransform/Edge
     UnityEngine.ReflectionProbe
     UnityEngine.RejectDragAndDropMaterial
     UnityEngine.RenderBuffer
     UnityEngine.RenderBufferHelper
     UnityEngine.Renderer
+        .ctor()
+        get_allowOcclusionWhenDynamic()
+        get_bounds()
+        get_castShadows()
+        get_isPartOfStaticBatch()
+        get_isVisible()
+        get_lightmapIndex()
+        get_lightmapScaleOffset()
+        get_lightProbeProxyVolumeOverride()
+        get_lightProbeUsage()
+        get_localToWorldMatrix()
+        get_material()
+        get_materials()
+        get_motionVectorGenerationMode()
+        get_motionVectors()
+        get_probeAnchor()
+        get_realtimeLightmapIndex()
+        get_realtimeLightmapScaleOffset()
+        get_receiveShadows()
+        get_reflectionProbeUsage()
+        get_shadowCastingMode()
+        get_sharedMaterial()
+        get_sharedMaterials()
+        get_sortingGroupID()
+        get_sortingGroupOrder()
+        get_sortingLayerName()
+        get_staticBatchIndex()
+        get_staticBatchRootTransform()
+        get_useLightProbes()
+        get_worldToLocalMatrix()
+        GetClosestReflectionProbes(System.Collections.Generic.List`1<UnityEngine.Rendering.ReflectionProbeBlendInfo>)
+        GetClosestReflectionProbesInternal(System.Object)
+        GetPropertyBlock(UnityEngine.MaterialPropertyBlock)
+        INTERNAL_get_bounds(UnityEngine.Bounds&)
+        INTERNAL_get_lightmapScaleOffset(UnityEngine.Vector4&)
+        INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)
+        INTERNAL_get_realtimeLightmapScaleOffset(UnityEngine.Vector4&)
+        INTERNAL_get_worldToLocalMatrix(UnityEngine.Matrix4x4&)
+        INTERNAL_set_lightmapScaleOffset(UnityEngine.Vector4&)
+        INTERNAL_set_realtimeLightmapScaleOffset(UnityEngine.Vector4&)
+        set_allowOcclusionWhenDynamic(System.Boolean)
+        set_castShadows(System.Boolean)
+        set_lightmapIndex(System.Int32)
+        set_lightmapScaleOffset(UnityEngine.Vector4)
+        set_lightProbeProxyVolumeOverride(UnityEngine.GameObject)
+        set_lightProbeUsage(UnityEngine.Rendering.LightProbeUsage)
+        set_material(UnityEngine.Material)
+        set_materials(UnityEngine.Material[])
+        set_motionVectorGenerationMode(UnityEngine.MotionVectorGenerationMode)
+        set_motionVectors(System.Boolean)
+        set_probeAnchor(UnityEngine.Transform)
+        set_realtimeLightmapIndex(System.Int32)
+        set_realtimeLightmapScaleOffset(UnityEngine.Vector4)
+        set_receiveShadows(System.Boolean)
+        set_reflectionProbeUsage(UnityEngine.Rendering.ReflectionProbeUsage)
+        set_shadowCastingMode(UnityEngine.Rendering.ShadowCastingMode)
+        set_sharedMaterial(UnityEngine.Material)
+        set_sharedMaterials(UnityEngine.Material[])
+        set_sortingLayerID(System.Int32)
+        set_sortingLayerName(System.String)
+        set_sortingOrder(System.Int32)
+        set_staticBatchRootTransform(UnityEngine.Transform)
+        set_useLightProbes(System.Boolean)
+        SetPropertyBlock(UnityEngine.MaterialPropertyBlock)
+        SetStaticBatchInfo(System.Int32,System.Int32)
     UnityEngine.RendererExtensions
     UnityEngine.Rendering.AmbientMode
     UnityEngine.Rendering.BlendMode
@@ -12525,9 +12777,7 @@ Summary:
     UnityEngine.Rendering.BuiltinShaderType
     UnityEngine.Rendering.CameraEvent
     UnityEngine.Rendering.CameraHDRMode
-    UnityEngine.Rendering.ColorWriteMask
     UnityEngine.Rendering.CommandBuffer
-    UnityEngine.Rendering.CompareFunction
     UnityEngine.Rendering.CopyTextureSupport
     UnityEngine.Rendering.CullMode
     UnityEngine.Rendering.DefaultReflectionMode
@@ -12559,7 +12809,6 @@ Summary:
     UnityEngine.Rendering.SortingGroup
     UnityEngine.Rendering.SphericalHarmonicsL2
     UnityEngine.Rendering.SplashScreen
-    UnityEngine.Rendering.StencilOp
     UnityEngine.Rendering.TextureDimension
     UnityEngine.RenderingPath
     UnityEngine.RenderSettings
@@ -12585,7 +12834,6 @@ Summary:
         get_enabled()
         get_enableRandomWrite()
         get_format()
-        get_height()
         get_isCubemap()
         get_isPowerOfTwo()
         get_isVolume()
@@ -12594,7 +12842,6 @@ Summary:
         get_useMipMap()
         get_volumeDepth()
         get_vrUsage()
-        get_width()
         GetActiveVRUsage()
         GetColorBuffer(UnityEngine.RenderBuffer&)
         GetDepthBuffer(UnityEngine.RenderBuffer&)
@@ -12622,9 +12869,7 @@ Summary:
         INTERNAL_CALL_SetRenderTextureDescriptor(UnityEngine.RenderTexture,UnityEngine.RenderTextureDescriptor&)
         Internal_CreateRenderTexture(UnityEngine.RenderTexture)
         Internal_GetDimension(UnityEngine.RenderTexture)
-        Internal_GetHeight(UnityEngine.RenderTexture)
         Internal_GetVRUsage(UnityEngine.RenderTexture)
-        Internal_GetWidth(UnityEngine.RenderTexture)
         Internal_SetDimension(UnityEngine.RenderTexture,UnityEngine.Rendering.TextureDimension)
         Internal_SetHeight(UnityEngine.RenderTexture,System.Int32)
         Internal_SetSRGBReadWrite(UnityEngine.RenderTexture,System.Boolean)
@@ -12670,10 +12915,25 @@ Summary:
         .ctor()
         get_asset()
     UnityEngine.Resources
+        .ctor()
+        ConvertObjects<T>(UnityEngine.Object[])
+        FindObjectsOfTypeAll(System.Type)
+        FindObjectsOfTypeAll<T>()
+        Load(System.String)
+        Load(System.String,System.Type)
+        Load<T>(System.String)
+        LoadAll(System.String)
+        LoadAll(System.String,System.Type)
+        LoadAll<T>(System.String)
+        LoadAsync(System.String)
+        LoadAsync(System.String,System.Type)
+        LoadAsync<T>(System.String)
+        LoadAsyncInternal(System.String,System.Type)
+        UnloadAsset(UnityEngine.Object)
+        UnloadUnusedAssets()
     UnityEngine.RotationOrder
     UnityEngine.RuntimeInitializeLoadType
     UnityEngine.RuntimeInitializeOnLoadMethodAttribute
-    UnityEngine.RuntimePlatform
     UnityEngine.RuntimeUndo
     UnityEngine.SceneManagement.Scene
         get_buildIndex()
@@ -12759,7 +13019,6 @@ Summary:
         get_autorotateToPortrait()
         get_autorotateToPortraitUpsideDown()
         get_currentResolution()
-        get_dpi()
         get_fullScreen()
         get_lockCursor()
         get_orientation()
@@ -12800,7 +13059,6 @@ Summary:
         get_Name()
         set_Name(System.String)
     UnityEngine.ScrollWaitDefinitions
-    UnityEngine.SelectionBaseAttribute
     UnityEngine.SendMouseEvents
         m_HitIndexGUI
         m_HitIndexPhysics2D
@@ -12820,6 +13078,107 @@ Summary:
         .ctor()
         InvokeStatic(System.Type,System.String,System.Object)
     UnityEngine.Shader
+        .ctor()
+        DisableKeyword(System.String)
+        EnableKeyword(System.String)
+        ExtractArrayFromList(System.Object)
+        Find(System.String)
+        FindBuiltin(System.String)
+        get_disableBatching()
+        get_globalMaximumLOD()
+        get_globalRenderPipeline()
+        get_globalShaderHardwareTier()
+        get_isSupported()
+        get_maximumLOD()
+        get_renderQueue()
+        GetGlobalColor(System.Int32)
+        GetGlobalColor(System.String)
+        GetGlobalColorImpl(System.Int32)
+        GetGlobalFloat(System.Int32)
+        GetGlobalFloat(System.String)
+        GetGlobalFloatArray(System.Int32)
+        GetGlobalFloatArray(System.Int32,System.Collections.Generic.List`1<System.Single>)
+        GetGlobalFloatArray(System.String)
+        GetGlobalFloatArray(System.String,System.Collections.Generic.List`1<System.Single>)
+        GetGlobalFloatArrayImpl(System.Int32)
+        GetGlobalFloatArrayImplList(System.Int32,System.Object)
+        GetGlobalFloatImpl(System.Int32)
+        GetGlobalInt(System.Int32)
+        GetGlobalInt(System.String)
+        GetGlobalIntImpl(System.Int32)
+        GetGlobalMatrix(System.Int32)
+        GetGlobalMatrix(System.String)
+        GetGlobalMatrixArray(System.Int32)
+        GetGlobalMatrixArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        GetGlobalMatrixArray(System.String)
+        GetGlobalMatrixArray(System.String,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        GetGlobalMatrixArrayImpl(System.Int32)
+        GetGlobalMatrixArrayImplList(System.Int32,System.Object)
+        GetGlobalMatrixImpl(System.Int32)
+        GetGlobalTexture(System.Int32)
+        GetGlobalTexture(System.String)
+        GetGlobalTextureImpl(System.Int32)
+        GetGlobalVector(System.Int32)
+        GetGlobalVector(System.String)
+        GetGlobalVectorArray(System.Int32)
+        GetGlobalVectorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        GetGlobalVectorArray(System.String)
+        GetGlobalVectorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        GetGlobalVectorArrayImpl(System.Int32)
+        GetGlobalVectorArrayImplList(System.Int32,System.Object)
+        GetGlobalVectorImpl(System.Int32)
+        IDToTag(System.Int32)
+        INTERNAL_CALL_GetGlobalColorImpl(System.Int32,UnityEngine.Color&)
+        INTERNAL_CALL_GetGlobalMatrixImpl(System.Int32,UnityEngine.Matrix4x4&)
+        INTERNAL_CALL_GetGlobalVectorImpl(System.Int32,UnityEngine.Vector4&)
+        INTERNAL_CALL_SetGlobalColorImpl(System.Int32,UnityEngine.Color&)
+        INTERNAL_CALL_SetGlobalMatrixImpl(System.Int32,UnityEngine.Matrix4x4&)
+        INTERNAL_CALL_SetGlobalVectorImpl(System.Int32,UnityEngine.Vector4&)
+        IsKeywordEnabled(System.String)
+        set_globalMaximumLOD(System.Int32)
+        set_globalRenderPipeline(System.String)
+        set_globalShaderHardwareTier(UnityEngine.Rendering.ShaderHardwareTier)
+        set_maximumLOD(System.Int32)
+        SetGlobalBuffer(System.Int32,UnityEngine.ComputeBuffer)
+        SetGlobalBuffer(System.String,UnityEngine.ComputeBuffer)
+        SetGlobalColor(System.Int32,UnityEngine.Color)
+        SetGlobalColor(System.String,UnityEngine.Color)
+        SetGlobalColorImpl(System.Int32,UnityEngine.Color)
+        SetGlobalFloat(System.Int32,System.Single)
+        SetGlobalFloat(System.String,System.Single)
+        SetGlobalFloatArray(System.Int32,System.Collections.Generic.List`1<System.Single>)
+        SetGlobalFloatArray(System.Int32,System.Single[])
+        SetGlobalFloatArray(System.Int32,System.Single[],System.Int32)
+        SetGlobalFloatArray(System.String,System.Collections.Generic.List`1<System.Single>)
+        SetGlobalFloatArray(System.String,System.Single[])
+        SetGlobalFloatArrayImpl(System.Int32,System.Single[],System.Int32)
+        SetGlobalFloatImpl(System.Int32,System.Single)
+        SetGlobalInt(System.Int32,System.Int32)
+        SetGlobalInt(System.String,System.Int32)
+        SetGlobalIntImpl(System.Int32,System.Int32)
+        SetGlobalMatrix(System.Int32,UnityEngine.Matrix4x4)
+        SetGlobalMatrix(System.String,UnityEngine.Matrix4x4)
+        SetGlobalMatrixArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        SetGlobalMatrixArray(System.Int32,UnityEngine.Matrix4x4[])
+        SetGlobalMatrixArray(System.Int32,UnityEngine.Matrix4x4[],System.Int32)
+        SetGlobalMatrixArray(System.String,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
+        SetGlobalMatrixArray(System.String,UnityEngine.Matrix4x4[])
+        SetGlobalMatrixArrayImpl(System.Int32,UnityEngine.Matrix4x4[],System.Int32)
+        SetGlobalMatrixImpl(System.Int32,UnityEngine.Matrix4x4)
+        SetGlobalTexture(System.Int32,UnityEngine.Texture)
+        SetGlobalTexture(System.String,UnityEngine.Texture)
+        SetGlobalTextureImpl(System.Int32,UnityEngine.Texture)
+        SetGlobalVector(System.Int32,UnityEngine.Vector4)
+        SetGlobalVector(System.String,UnityEngine.Vector4)
+        SetGlobalVectorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        SetGlobalVectorArray(System.Int32,UnityEngine.Vector4[])
+        SetGlobalVectorArray(System.Int32,UnityEngine.Vector4[],System.Int32)
+        SetGlobalVectorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        SetGlobalVectorArray(System.String,UnityEngine.Vector4[])
+        SetGlobalVectorArrayImpl(System.Int32,UnityEngine.Vector4[],System.Int32)
+        SetGlobalVectorImpl(System.Int32,UnityEngine.Vector4)
+        TagToID(System.String)
+        WarmupAllShaders()
     UnityEngine.ShaderVariantCollection
     UnityEngine.ShadowmaskMode
     UnityEngine.ShadowProjection
@@ -12830,8 +13189,16 @@ Summary:
     UnityEngine.Skybox
     UnityEngine.SleepTimeout
     UnityEngine.SortingLayer
+        get_id()
+        get_layers()
+        get_name()
+        get_value()
+        GetLayerValueFromName(System.String)
+        GetSortingLayerIDsInternal()
+        IDToName(System.Int32)
+        IsValid(System.Int32)
+        NameToID(System.String)
     UnityEngine.Space
-    UnityEngine.SpaceAttribute
     UnityEngine.SparseTexture
     UnityEngine.Sprite
         .ctor()
@@ -12840,26 +13207,16 @@ Summary:
         Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single,System.UInt32)
         Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single,System.UInt32,UnityEngine.SpriteMeshType)
         Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single,System.UInt32,UnityEngine.SpriteMeshType,UnityEngine.Vector4)
-        get_associatedAlphaSplitTexture()
-        get_border()
         get_bounds()
-        get_packed()
         get_packingMode()
         get_packingRotation()
         get_pivot()
-        get_pixelsPerUnit()
-        get_rect()
-        get_texture()
-        get_textureRect()
         get_textureRectOffset()
         get_triangles()
         get_uv()
         get_vertices()
         INTERNAL_CALL_Create(UnityEngine.Texture2D,UnityEngine.Rect&,UnityEngine.Vector2&,System.Single,System.UInt32,UnityEngine.SpriteMeshType,UnityEngine.Vector4&)
-        INTERNAL_get_border(UnityEngine.Vector4&)
         INTERNAL_get_bounds(UnityEngine.Bounds&)
-        INTERNAL_get_rect(UnityEngine.Rect&)
-        INTERNAL_get_textureRect(UnityEngine.Rect&)
         Internal_GetPivot(UnityEngine.Sprite,UnityEngine.Vector2&)
         Internal_GetTextureRectOffset(UnityEngine.Sprite,UnityEngine.Vector2&)
         OverrideGeometry(UnityEngine.Vector2[],System.UInt16[])
@@ -12870,7 +13227,36 @@ Summary:
     UnityEngine.SpritePackingMode
     UnityEngine.SpritePackingRotation
     UnityEngine.SpriteRenderer
+        .ctor()
+        get_adaptiveModeThreshold()
+        get_color()
+        get_drawMode()
+        get_flipX()
+        get_flipY()
+        get_maskInteraction()
+        get_shouldSupportTiling()
+        get_size()
+        get_sprite()
+        get_tileMode()
+        GetSprite_INTERNAL()
+        GetSpriteBounds()
+        INTERNAL_CALL_GetSpriteBounds(UnityEngine.SpriteRenderer,UnityEngine.Bounds&)
+        INTERNAL_get_color(UnityEngine.Color&)
+        INTERNAL_get_size(UnityEngine.Vector2&)
+        INTERNAL_set_color(UnityEngine.Color&)
+        INTERNAL_set_size(UnityEngine.Vector2&)
+        set_adaptiveModeThreshold(System.Single)
+        set_color(UnityEngine.Color)
+        set_drawMode(UnityEngine.SpriteDrawMode)
+        set_flipX(System.Boolean)
+        set_flipY(System.Boolean)
+        set_maskInteraction(UnityEngine.SpriteMaskInteraction)
+        set_size(UnityEngine.Vector2)
+        set_sprite(UnityEngine.Sprite)
+        set_tileMode(UnityEngine.SpriteTileMode)
+        SetSprite_INTERNAL(UnityEngine.Sprite)
     UnityEngine.Sprites.DataUtility
+        .ctor()
     UnityEngine.SpriteTileMode
     UnityEngine.StackTraceLogType
     UnityEngine.StackTraceUtility
@@ -12881,32 +13267,78 @@ Summary:
     UnityEngine.StereoTargetEyeMask
     UnityEngine.SystemClock
     UnityEngine.SystemInfo
+        unsupportedIdentifier
+        .ctor()
+        get_batteryLevel()
+        get_batteryStatus()
+        get_copyTextureSupport()
+        get_deviceModel()
+        get_deviceName()
+        get_deviceType()
+        get_deviceUniqueIdentifier()
+        get_graphicsDeviceID()
+        get_graphicsDeviceName()
+        get_graphicsDeviceType()
+        get_graphicsDeviceVendor()
+        get_graphicsDeviceVendorID()
+        get_graphicsDeviceVersion()
+        get_graphicsMemorySize()
+        get_graphicsMultiThreaded()
+        get_graphicsPixelFillrate()
+        get_graphicsShaderLevel()
+        get_graphicsUVStartsAtTop()
+        get_maxCubemapSize()
+        get_maxRenderTextureSize()
+        get_maxTextureSize()
+        get_npotSupport()
+        get_operatingSystem()
+        get_processorCount()
+        get_processorFrequency()
+        get_processorType()
+        get_supportedRenderTargetCount()
+        get_supports2DArrayTextures()
+        get_supports3DRenderTextures()
+        get_supports3DTextures()
+        get_supportsAccelerometer()
+        get_supportsAudio()
+        get_supportsComputeShaders()
+        get_supportsCubemapArrayTextures()
+        get_supportsGyroscope()
+        get_supportsImageEffects()
+        get_supportsInstancing()
+        get_supportsLocationService()
+        get_supportsMotionVectors()
+        get_supportsRawShadowDepthSampling()
+        get_supportsRenderTextures()
+        get_supportsRenderToCubemap()
+        get_supportsShadows()
+        get_supportsSparseTextures()
+        get_supportsStencil()
+        get_supportsVertexPrograms()
+        get_supportsVibration()
+        get_systemMemorySize()
+        get_usesReversedZBuffer()
+        SupportsRenderTextureFormat(UnityEngine.RenderTextureFormat)
+        SupportsTextureFormat(UnityEngine.TextureFormat)
     UnityEngine.SystemLanguage
     UnityEngine.TexGenMode
     UnityEngine.TextAreaAttribute
+        .ctor()
     UnityEngine.TextAsset
     UnityEngine.Texture
-        .ctor()
         get_anisoLevel()
         get_anisotropicFiltering()
         get_dimension()
         get_filterMode()
-        get_height()
         get_masterTextureLimit()
         get_mipMapBias()
-        get_texelSize()
-        get_width()
-        get_wrapMode()
         get_wrapModeU()
         get_wrapModeV()
         get_wrapModeW()
         GetNativeTextureID()
         GetNativeTexturePtr()
         INTERNAL_CALL_GetNativeTexturePtr(UnityEngine.Texture,System.IntPtr&)
-        INTERNAL_get_texelSize(UnityEngine.Vector2&)
         Internal_GetDimension(UnityEngine.Texture)
-        Internal_GetHeight(UnityEngine.Texture)
-        Internal_GetWidth(UnityEngine.Texture)
         set_anisoLevel(System.Int32)
         set_anisotropicFiltering(UnityEngine.AnisotropicFiltering)
         set_dimension(UnityEngine.Rendering.TextureDimension)
@@ -12935,9 +13367,7 @@ Summary:
         get_blackTexture()
         get_format()
         get_mipmapCount()
-        get_whiteTexture()
         GetPixel(System.Int32,System.Int32)
-        GetPixelBilinear(System.Single,System.Single)
         GetPixels()
         GetPixels(System.Int32)
         GetPixels(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -12947,7 +13377,6 @@ Summary:
         GetRawTextureData()
         INTERNAL_CALL_Compress(UnityEngine.Texture2D,System.Boolean)
         INTERNAL_CALL_GetPixel(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.Color&)
-        INTERNAL_CALL_GetPixelBilinear(UnityEngine.Texture2D,System.Single,System.Single,UnityEngine.Color&)
         INTERNAL_CALL_ReadPixels(UnityEngine.Texture2D,UnityEngine.Rect&,System.Int32,System.Int32,System.Boolean)
         INTERNAL_CALL_SetPixel(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.Color&)
         Internal_Create(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean,System.IntPtr)
@@ -12979,46 +13408,67 @@ Summary:
     UnityEngine.Texture2DArray
     UnityEngine.Texture3D
     UnityEngine.TextureFormat
-    UnityEngine.TextureWrapMode
     UnityEngine.ThreadPriority
     UnityEngine.Time
-    UnityEngine.TooltipAttribute
+        .ctor()
+        get_captureFramerate()
+        get_fixedDeltaTime()
+        get_fixedTime()
+        get_fixedUnscaledDeltaTime()
+        get_fixedUnscaledTime()
+        get_frameCount()
+        get_inFixedTimeStep()
+        get_maximumDeltaTime()
+        get_maximumParticleDeltaTime()
+        get_renderedFrameCount()
+        get_smoothDeltaTime()
+        get_time()
+        get_timeScale()
+        get_timeSinceLevelLoad()
+        set_captureFramerate(System.Int32)
+        set_fixedDeltaTime(System.Single)
+        set_maximumDeltaTime(System.Single)
+        set_maximumParticleDeltaTime(System.Single)
+        set_timeScale(System.Single)
     UnityEngine.Touch
-    UnityEngine.TouchPhase
+        get_altitudeAngle()
+        get_azimuthAngle()
+        get_deltaPosition()
+        get_deltaTime()
+        get_maximumPossiblePressure()
+        get_pressure()
+        get_radius()
+        get_radiusVariance()
+        get_rawPosition()
+        get_tapCount()
+        set_altitudeAngle(System.Single)
+        set_azimuthAngle(System.Single)
+        set_deltaPosition(UnityEngine.Vector2)
+        set_deltaTime(System.Single)
+        set_fingerId(System.Int32)
+        set_maximumPossiblePressure(System.Single)
+        set_phase(UnityEngine.TouchPhase)
+        set_position(UnityEngine.Vector2)
+        set_pressure(System.Single)
+        set_radius(System.Single)
+        set_radiusVariance(System.Single)
+        set_rawPosition(UnityEngine.Vector2)
+        set_tapCount(System.Int32)
+        set_type(UnityEngine.TouchType)
     UnityEngine.TouchScreenKeyboard
-        .ctor(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
-        get_active()
         get_area()
-        get_canGetSelection()
-        get_done()
         get_hideInput()
-        get_isSupported()
-        get_selection()
         get_status()
         get_targetDisplay()
-        get_text()
         get_type()
         get_visible()
-        get_wasCanceled()
-        GetSelectionInternal(System.Int32&,System.Int32&)
         INTERNAL_get_area(UnityEngine.Rect&)
-        IsSupported(UnityEngine.RuntimePlatform)
         Open(System.String)
         Open(System.String,UnityEngine.TouchScreenKeyboardType)
         Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean)
-        Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean)
-        Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean)
         Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-        Open(System.String,UnityEngine.TouchScreenKeyboardType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)
-        set_active(System.Boolean)
-        set_hideInput(System.Boolean)
         set_targetDisplay(System.Int32)
-        set_text(System.String)
-        TouchScreenKeyboard_InternalConstructorHelper(UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments&,System.String,System.String)
     UnityEngine.TouchScreenKeyboard/Status
-    UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments
-    UnityEngine.TouchScreenKeyboardType
-    UnityEngine.TouchType
     UnityEngine.TrackedReference
         .ctor()
         op_Implicit(UnityEngine.TrackedReference)
@@ -13029,60 +13479,36 @@ Summary:
         Find(System.String)
         FindChild(System.String)
         get_eulerAngles()
-        get_forward()
         get_hasChanged()
         get_hierarchyCapacity()
         get_hierarchyCount()
         get_localEulerAngles()
-        get_localPosition()
-        get_localRotation()
-        get_localScale()
         get_localToWorldMatrix()
         get_lossyScale()
-        get_parent()
-        get_parentInternal()
-        get_position()
         get_right()
         get_root()
-        get_rotation()
         get_up()
-        get_worldToLocalMatrix()
         GetChildCount()
         GetLocalEulerAngles(UnityEngine.RotationOrder)
         GetSiblingIndex()
         INTERNAL_CALL_GetLocalEulerAngles(UnityEngine.Transform,UnityEngine.RotationOrder,UnityEngine.Vector3&)
         INTERNAL_CALL_InverseTransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        INTERNAL_CALL_InverseTransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_InverseTransformVector(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_RotateAround(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
-        INTERNAL_CALL_RotateAroundInternal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
         INTERNAL_CALL_RotateAroundLocal(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
         INTERNAL_CALL_SetLocalEulerAngles(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.RotationOrder)
         INTERNAL_CALL_SetPositionAndRotation(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        INTERNAL_CALL_TransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_TransformVector(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        INTERNAL_get_localPosition(UnityEngine.Vector3&)
-        INTERNAL_get_localRotation(UnityEngine.Quaternion&)
-        INTERNAL_get_localScale(UnityEngine.Vector3&)
         INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)
         INTERNAL_get_lossyScale(UnityEngine.Vector3&)
-        INTERNAL_get_position(UnityEngine.Vector3&)
-        INTERNAL_get_rotation(UnityEngine.Quaternion&)
-        INTERNAL_get_worldToLocalMatrix(UnityEngine.Matrix4x4&)
-        INTERNAL_set_localPosition(UnityEngine.Vector3&)
-        INTERNAL_set_localRotation(UnityEngine.Quaternion&)
-        INTERNAL_set_localScale(UnityEngine.Vector3&)
-        INTERNAL_set_position(UnityEngine.Vector3&)
         INTERNAL_set_rotation(UnityEngine.Quaternion&)
         InverseTransformDirection(System.Single,System.Single,System.Single)
         InverseTransformDirection(UnityEngine.Vector3)
         InverseTransformPoint(System.Single,System.Single,System.Single)
-        InverseTransformPoint(UnityEngine.Vector3)
         InverseTransformVector(System.Single,System.Single,System.Single)
         InverseTransformVector(UnityEngine.Vector3)
-        IsChildOf(UnityEngine.Transform)
         LookAt(UnityEngine.Transform)
         LookAt(UnityEngine.Transform,UnityEngine.Vector3)
         LookAt(UnityEngine.Vector3)
@@ -13094,34 +13520,22 @@ Summary:
         Rotate(UnityEngine.Vector3,System.Single,UnityEngine.Space)
         Rotate(UnityEngine.Vector3,UnityEngine.Space)
         RotateAround(UnityEngine.Vector3,System.Single)
-        RotateAround(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-        RotateAroundInternal(UnityEngine.Vector3,System.Single)
         RotateAroundLocal(UnityEngine.Vector3,System.Single)
         set_eulerAngles(UnityEngine.Vector3)
         set_forward(UnityEngine.Vector3)
         set_hasChanged(System.Boolean)
         set_hierarchyCapacity(System.Int32)
         set_localEulerAngles(UnityEngine.Vector3)
-        set_localPosition(UnityEngine.Vector3)
-        set_localRotation(UnityEngine.Quaternion)
-        set_localScale(UnityEngine.Vector3)
-        set_parent(UnityEngine.Transform)
-        set_parentInternal(UnityEngine.Transform)
-        set_position(UnityEngine.Vector3)
         set_right(UnityEngine.Vector3)
         set_rotation(UnityEngine.Quaternion)
         set_up(UnityEngine.Vector3)
-        SetAsFirstSibling()
         SetAsLastSibling()
         SetLocalEulerAngles(UnityEngine.Vector3,UnityEngine.RotationOrder)
-        SetParent(UnityEngine.Transform)
-        SetParent(UnityEngine.Transform,System.Boolean)
         SetPositionAndRotation(UnityEngine.Vector3,UnityEngine.Quaternion)
         SetSiblingIndex(System.Int32)
         TransformDirection(System.Single,System.Single,System.Single)
         TransformDirection(UnityEngine.Vector3)
         TransformPoint(System.Single,System.Single,System.Single)
-        TransformPoint(UnityEngine.Vector3)
         TransformVector(System.Single,System.Single,System.Single)
         TransformVector(UnityEngine.Vector3)
         Translate(System.Single,System.Single,System.Single)
@@ -13165,40 +13579,26 @@ Summary:
     UnityEngine.UnsafeUtility
     UnityEngine.UserAuthorization
     UnityEngine.Vector2
-        kEpsilon
         Angle(UnityEngine.Vector2,UnityEngine.Vector2)
         ClampMagnitude(UnityEngine.Vector2,System.Single)
         Distance(UnityEngine.Vector2,UnityEngine.Vector2)
-        Dot(UnityEngine.Vector2,UnityEngine.Vector2)
         get_down()
-        get_Item(System.Int32)
         get_left()
         get_magnitude()
         get_negativeInfinity()
         get_normalized()
-        get_one()
         get_positiveInfinity()
-        get_right()
-        get_up()
         Lerp(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
         LerpUnclamped(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
         Max(UnityEngine.Vector2,UnityEngine.Vector2)
         Min(UnityEngine.Vector2,UnityEngine.Vector2)
         MoveTowards(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
         Normalize()
-        op_Addition(UnityEngine.Vector2,UnityEngine.Vector2)
-        op_Division(UnityEngine.Vector2,System.Single)
-        op_Implicit(UnityEngine.Vector2)
-        op_Implicit(UnityEngine.Vector3)
-        op_Inequality(UnityEngine.Vector2,UnityEngine.Vector2)
         op_Multiply(System.Single,UnityEngine.Vector2)
-        op_Multiply(UnityEngine.Vector2,System.Single)
         op_UnaryNegation(UnityEngine.Vector2)
         Reflect(UnityEngine.Vector2,UnityEngine.Vector2)
         Scale(UnityEngine.Vector2)
-        Scale(UnityEngine.Vector2,UnityEngine.Vector2)
         Set(System.Single,System.Single)
-        set_Item(System.Int32,System.Single)
         SignedAngle(UnityEngine.Vector2,UnityEngine.Vector2)
         SmoothDamp(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2&,System.Single,System.Single,System.Single)
         SqrMagnitude()
@@ -13206,27 +13606,15 @@ Summary:
         ToString(System.String)
     UnityEngine.Vector2Int
     UnityEngine.Vector3
-        kEpsilon
-        .ctor(System.Single,System.Single)
         Angle(UnityEngine.Vector3,UnityEngine.Vector3)
         AngleBetween(UnityEngine.Vector3,UnityEngine.Vector3)
         ClampMagnitude(UnityEngine.Vector3,System.Single)
         Cross(UnityEngine.Vector3,UnityEngine.Vector3)
-        Distance(UnityEngine.Vector3,UnityEngine.Vector3)
-        Dot(UnityEngine.Vector3,UnityEngine.Vector3)
         Exclude(UnityEngine.Vector3,UnityEngine.Vector3)
-        get_back()
-        get_down()
         get_fwd()
-        get_Item(System.Int32)
-        get_left()
         get_magnitude()
         get_negativeInfinity()
-        get_one()
         get_positiveInfinity()
-        get_right()
-        get_sqrMagnitude()
-        get_up()
         INTERNAL_CALL_Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_OrthoNormalize3(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_RotateTowards(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)
@@ -13234,18 +13622,10 @@ Summary:
         INTERNAL_CALL_SlerpUnclamped(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
         Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
         Internal_OrthoNormalize3(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         LerpUnclamped(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-        Max(UnityEngine.Vector3,UnityEngine.Vector3)
-        Min(UnityEngine.Vector3,UnityEngine.Vector3)
         MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         Normalize()
-        op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
-        op_Equality(UnityEngine.Vector3,UnityEngine.Vector3)
-        op_Inequality(UnityEngine.Vector3,UnityEngine.Vector3)
         op_Multiply(System.Single,UnityEngine.Vector3)
-        op_Multiply(UnityEngine.Vector3,System.Single)
-        op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
         op_UnaryNegation(UnityEngine.Vector3)
         OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&)
         OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
@@ -13256,30 +13636,23 @@ Summary:
         Scale(UnityEngine.Vector3)
         Scale(UnityEngine.Vector3,UnityEngine.Vector3)
         Set(System.Single,System.Single,System.Single)
-        set_Item(System.Int32,System.Single)
         SignedAngle(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
         Slerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         SlerpUnclamped(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single)
         SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single,System.Single)
         SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single,System.Single,System.Single)
-        SqrMagnitude(UnityEngine.Vector3)
         ToString(System.String)
     UnityEngine.Vector3Int
     UnityEngine.Vector4
-        kEpsilon
         .ctor(System.Single,System.Single)
         .ctor(System.Single,System.Single,System.Single)
         Distance(UnityEngine.Vector4,UnityEngine.Vector4)
-        Dot(UnityEngine.Vector4,UnityEngine.Vector4)
-        get_Item(System.Int32)
         get_magnitude()
         get_negativeInfinity()
         get_normalized()
         get_one()
         get_positiveInfinity()
-        get_sqrMagnitude()
-        get_zero()
         Lerp(UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
         LerpUnclamped(UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
         Magnitude(UnityEngine.Vector4)
@@ -13289,8 +13662,6 @@ Summary:
         Normalize()
         Normalize(UnityEngine.Vector4)
         op_Addition(UnityEngine.Vector4,UnityEngine.Vector4)
-        op_Division(UnityEngine.Vector4,System.Single)
-        op_Equality(UnityEngine.Vector4,UnityEngine.Vector4)
         op_Implicit(UnityEngine.Vector2)
         op_Implicit(UnityEngine.Vector3)
         op_Implicit(UnityEngine.Vector4)
@@ -13298,24 +13669,18 @@ Summary:
         op_Inequality(UnityEngine.Vector4,UnityEngine.Vector4)
         op_Multiply(System.Single,UnityEngine.Vector4)
         op_Multiply(UnityEngine.Vector4,System.Single)
-        op_Subtraction(UnityEngine.Vector4,UnityEngine.Vector4)
         op_UnaryNegation(UnityEngine.Vector4)
         Project(UnityEngine.Vector4,UnityEngine.Vector4)
         Scale(UnityEngine.Vector4)
         Scale(UnityEngine.Vector4,UnityEngine.Vector4)
         Set(System.Single,System.Single,System.Single,System.Single)
-        set_Item(System.Int32,System.Single)
         SqrMagnitude()
-        SqrMagnitude(UnityEngine.Vector4)
         ToString(System.String)
     UnityEngine.VRTextureUsage
-    UnityEngine.WaitForEndOfFrame
-        .ctor()
     UnityEngine.WaitForFixedUpdate
         .ctor()
     UnityEngine.WaitForSeconds
         .ctor(System.Single)
-    UnityEngine.WaitForSecondsRealtime
     UnityEngine.WaitUntil
     UnityEngine.WaitWhile
     UnityEngine.Windows.Crypto
@@ -13354,6 +13719,7 @@ Summary:
     UnityEngine.Windows.Speech.DictationTopicConstraint
     UnityEngine.Windows.Speech.GrammarRecognizer
     UnityEngine.Windows.Speech.KeywordRecognizer
+        get_Keywords()
     UnityEngine.Windows.Speech.PhraseRecognitionSystem
         add_OnError(UnityEngine.Windows.Speech.PhraseRecognitionSystem/ErrorDelegate)
         add_OnStatusChanged(UnityEngine.Windows.Speech.PhraseRecognitionSystem/StatusDelegate)
@@ -13364,17 +13730,10 @@ Summary:
         Restart()
         Shutdown()
     UnityEngine.Windows.Speech.PhraseRecognizer
-        .ctor()
-        add_OnPhraseRecognized(UnityEngine.Windows.Speech.PhraseRecognizer/PhraseRecognizedDelegate)
         CreateFromGrammarFile(System.String,UnityEngine.Windows.Speech.ConfidenceLevel)
-        CreateFromKeywords(System.String[],UnityEngine.Windows.Speech.ConfidenceLevel)
         get_IsRunning()
         INTERNAL_CALL_CreateFromGrammarFile(UnityEngine.Windows.Speech.PhraseRecognizer,System.String,UnityEngine.Windows.Speech.ConfidenceLevel,System.IntPtr&)
-        INTERNAL_CALL_CreateFromKeywords(UnityEngine.Windows.Speech.PhraseRecognizer,System.String[],UnityEngine.Windows.Speech.ConfidenceLevel,System.IntPtr&)
         IsRunning_Internal(System.IntPtr)
-        remove_OnPhraseRecognized(UnityEngine.Windows.Speech.PhraseRecognizer/PhraseRecognizedDelegate)
-        Start()
-        Start_Internal(System.IntPtr)
         Stop()
         Stop_Internal(System.IntPtr)
     UnityEngine.WrapMode
@@ -13392,19 +13751,14 @@ Summary:
     UnityEngine.WSA.WindowActivated
     UnityEngine.WSA.WindowActivationState
     UnityEngine.WSA.WindowSizeChanged
-    UnityEngine.YieldInstruction
-        .ctor()
     UnityEngineInternal.APIUpdaterRuntimeServices
     UnityEngineInternal.FastCallExceptionHandler
     UnityEngineInternal.GetMethodDelegate
     UnityEngineInternal.GIDebugVisualisation
     UnityEngineInternal.GITextureType
     UnityEngineInternal.LightmapType
-    UnityEngineInternal.NetFxCoreExtensions
-        GetMethodInfo(System.Delegate)
     UnityEngineInternal.ScriptingUtils
-    UnityEngineInternal.TypeInferenceRuleAttribute
-    UnityEngineInternal.TypeInferenceRules
+        .ctor()
 ---------------------------------------------------
 Assembly: UnityEngine.DirectorModule
 ---------------------------------------------------
@@ -13471,14 +13825,12 @@ Summary:
     Generic Interfaces = 0
     Generic Abstract Classes = 0
     Attributes = 0
-  Total Field Removals = 23
-  Total Method Removals = 750
+  Total Field Removals = 22
+  Total Method Removals = 745
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.CursorPositionStylePainterParameters
     UnityEngine.Event
-        <>f__switch$map0
-        .ctor()
         .ctor(System.IntPtr)
         .ctor(UnityEngine.Event)
         CleanupRoots()
@@ -13496,7 +13848,6 @@ Summary:
         get_mouseRay()
         get_numeric()
         get_pressure()
-        get_rawType()
         get_shift()
         GetEventCount()
         GetTypeForControl(System.Int32)
@@ -13509,7 +13860,6 @@ Summary:
         Internal_SetMousePosition(UnityEngine.Vector2)
         Internal_Use()
         KeyboardEvent(System.String)
-        PopEvent(UnityEngine.Event)
         set_alt(System.Boolean)
         set_button(System.Int32)
         set_capsLock(System.Boolean)
@@ -14122,7 +14472,6 @@ Summary:
         get_hotControl()
         get_keyboardControl()
         get_mouseUsed()
-        get_systemCopyBuffer()
         get_textFieldInput()
         GetBuiltinSkin(System.Int32)
         GetChanged()
@@ -14154,7 +14503,6 @@ Summary:
         set_hotControl(System.Int32)
         set_keyboardControl(System.Int32)
         set_mouseUsed(System.Boolean)
-        set_systemCopyBuffer(System.String)
         set_textFieldInput(System.Boolean)
         SetChanged(System.Boolean)
         SetDidGUIWindowsEatLastEvent(System.Boolean)
@@ -14350,7 +14698,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 4
-  Total Method Removals = 538
+  Total Method Removals = 534
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.AnchoredJoint2D
@@ -14803,11 +15151,7 @@ Summary:
     UnityEngine.RaycastHit2D
         CompareTo(UnityEngine.RaycastHit2D)
         get_centroid()
-        get_collider()
-        get_distance()
         get_fraction()
-        get_normal()
-        get_point()
         get_rigidbody()
         get_transform()
         op_Implicit(UnityEngine.RaycastHit2D)
@@ -14957,7 +15301,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 7
-  Total Method Removals = 443
+  Total Method Removals = 439
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.BoxCollider
@@ -15286,11 +15630,7 @@ Summary:
     UnityEngine.RaycastHit
         CalculateRaycastTexCoord(UnityEngine.Vector2&,UnityEngine.Collider,UnityEngine.Vector2,UnityEngine.Vector3,System.Int32,System.Int32)
         get_barycentricCoordinate()
-        get_collider()
-        get_distance()
         get_lightmapCoord()
-        get_normal()
-        get_point()
         get_rigidbody()
         get_textureCoord()
         get_textureCoord1()
@@ -15656,7 +15996,7 @@ Summary:
 Assembly: UnityEngine.TextRenderingModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 14
+  Total Type Removals = 4
     Nested = 0
     Interfaces = 0
     Abstract Classes = 0
@@ -15665,7 +16005,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 32
+  Total Method Removals = 31
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.CharacterInfo
@@ -15674,27 +16014,21 @@ Summary:
         .ctor(System.String)
         .ctor(System.String[],System.Int32)
         add_m_FontTextureRebuildCallback(UnityEngine.Font/FontTextureRebuildCallback)
-        add_textureRebuilt(System.Action`1<UnityEngine.Font>)
         CreateDynamicFontFromOSFont(System.String,System.Int32)
         CreateDynamicFontFromOSFont(System.String[],System.Int32)
         get_ascent()
         get_characterInfo()
-        get_dynamic()
         get_fontNames()
-        get_fontSize()
         get_lineHeight()
-        get_material()
         get_textureRebuildCallback()
         GetCharacterInfo(System.Char,UnityEngine.CharacterInfo&)
         GetCharacterInfo(System.Char,UnityEngine.CharacterInfo&,System.Int32)
         GetCharacterInfo(System.Char,UnityEngine.CharacterInfo&,System.Int32,UnityEngine.FontStyle)
         GetMaxVertsForString(System.String)
         GetOSInstalledFontNames()
-        HasCharacter(System.Char)
         Internal_CreateDynamicFont(UnityEngine.Font,System.String[],System.Int32)
         Internal_CreateFont(UnityEngine.Font,System.String)
         remove_m_FontTextureRebuildCallback(UnityEngine.Font/FontTextureRebuildCallback)
-        remove_textureRebuilt(System.Action`1<UnityEngine.Font>)
         RequestCharactersInTexture(System.String)
         RequestCharactersInTexture(System.String,System.Int32)
         RequestCharactersInTexture(System.String,System.Int32,UnityEngine.FontStyle)
@@ -15702,19 +16036,15 @@ Summary:
         set_fontNames(System.String[])
         set_material(UnityEngine.Material)
         set_textureRebuildCallback(UnityEngine.Font/FontTextureRebuildCallback)
-    UnityEngine.FontStyle
     UnityEngine.GUIText
-    UnityEngine.HorizontalWrapMode
     UnityEngine.TextAlignment
-    UnityEngine.TextAnchor
-    UnityEngine.TextGenerationError
-    UnityEngine.TextGenerationSettings
     UnityEngine.TextGenerator
+        get_fontSizeUsedForBestFit()
+        get_vertexCount()
+        GetCharactersArray()
+        GetLinesArray()
+        GetVerticesArray()
     UnityEngine.TextMesh
-    UnityEngine.UICharInfo
-    UnityEngine.UILineInfo
-    UnityEngine.UIVertex
-    UnityEngine.VerticalWrapMode
 ---------------------------------------------------
 Assembly: UnityEngine.TilemapModule
 ---------------------------------------------------
@@ -15819,69 +16149,71 @@ Summary:
 Assembly: UnityEngine.UIModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 7
+  Total Type Removals = 1
     Nested = 0
-    Interfaces = 1
+    Interfaces = 0
     Abstract Classes = 0
     Generic Types = 0
     Generic Interfaces = 0
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 43
+  Total Method Removals = 47
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.AdditionalCanvasShaderChannels
     UnityEngine.Canvas
-        .ctor()
-        add_willRenderCanvases(UnityEngine.Canvas/WillRenderCanvases)
-        ForceUpdateCanvases()
         get_additionalShaderChannels()
         get_cachedSortingLayerValue()
-        get_isRootCanvas()
         get_normalizedSortingGridSize()
         get_overridePixelPerfect()
-        get_overrideSorting()
-        get_pixelPerfect()
         get_pixelRect()
         get_planeDistance()
-        get_referencePixelsPerUnit()
-        get_renderMode()
-        get_renderOrder()
-        get_rootCanvas()
-        get_scaleFactor()
         get_sortingGridNormalizedSize()
-        get_sortingLayerID()
         get_sortingLayerName()
-        get_sortingOrder()
-        get_targetDisplay()
-        get_worldCamera()
-        GetDefaultCanvasMaterial()
         GetDefaultCanvasTextMaterial()
-        GetETC1SupportedCanvasMaterial()
         INTERNAL_get_pixelRect(UnityEngine.Rect&)
-        remove_willRenderCanvases(UnityEngine.Canvas/WillRenderCanvases)
         set_additionalShaderChannels(UnityEngine.AdditionalCanvasShaderChannels)
         set_normalizedSortingGridSize(System.Single)
         set_overridePixelPerfect(System.Boolean)
-        set_overrideSorting(System.Boolean)
         set_pixelPerfect(System.Boolean)
         set_planeDistance(System.Single)
-        set_referencePixelsPerUnit(System.Single)
         set_renderMode(UnityEngine.RenderMode)
-        set_scaleFactor(System.Single)
         set_sortingGridNormalizedSize(System.Int32)
-        set_sortingLayerID(System.Int32)
         set_sortingLayerName(System.String)
-        set_sortingOrder(System.Int32)
         set_targetDisplay(System.Int32)
         set_worldCamera(UnityEngine.Camera)
     UnityEngine.CanvasGroup
+        .ctor()
+        set_blocksRaycasts(System.Boolean)
+        set_ignoreParentGroups(System.Boolean)
+        set_interactable(System.Boolean)
     UnityEngine.CanvasRenderer
-    UnityEngine.ICanvasRaycastFilter
+        .ctor()
+        AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>)
+        CreateUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)
+        get_hasPopInstruction()
+        get_hasRectClipping()
+        get_isMask()
+        get_popMaterialCount()
+        get_relativeDepth()
+        GetAlpha()
+        GetMaterial()
+        GetMaterial(System.Int32)
+        GetPopMaterial(System.Int32)
+        set_isMask(System.Boolean)
+        SetAlpha(System.Single)
+        SetVertices(System.Collections.Generic.List`1<UnityEngine.UIVertex>)
+        SetVertices(UnityEngine.UIVertex[],System.Int32)
+        SplitUIVertexStreams(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)
     UnityEngine.RectTransformUtility
-    UnityEngine.RenderMode
+        .ctor()
+        CalculateRelativeRectTransformBounds(UnityEngine.Transform)
+        CalculateRelativeRectTransformBounds(UnityEngine.Transform,UnityEngine.Transform)
+        RectangleContainsScreenPoint(UnityEngine.RectTransform,UnityEngine.Vector2)
+        WorldToScreenPoint(UnityEngine.Camera,UnityEngine.Vector3)
     UnityEngine.UISystemProfilerApi
+        .ctor()
 ---------------------------------------------------
 Assembly: UnityEngine.UNETModule
 ---------------------------------------------------
@@ -16588,7 +16920,7 @@ Summary:
     UnityEngine.XR.XRStats
 ---------------------------------------------------
 Mono.Cecil.ExportedType Removals:
-  Total: 1110
+  Total: 1045
 ---------------------------------------------------
 AOT.MonoPInvokeCallbackAttribute
 JetBrains.Annotations.AssertionMethodAttribute
@@ -16625,7 +16957,6 @@ SimpleJson.SimpleJson
 UnityEngine._AndroidJNIHelper
 UnityEngine.AccelerationEvent
 UnityEngine.Accessibility.VisionUtility
-UnityEngine.AddComponentMenu
 UnityEngine.AdditionalCanvasShaderChannels
 UnityEngine.Advertisements.UnityAdsSettings
 UnityEngine.AI.NavMeshAgent
@@ -16678,7 +17009,6 @@ UnityEngine.AnimationPlayMode
 UnityEngine.Animations.AnimationPlayableExtensions
 UnityEngine.Animations.AnimationPlayableGraphExtensions
 UnityEngine.Animations.IAnimatorControllerPlayable
-UnityEngine.Animator
 UnityEngine.AnimatorControllerParameter
 UnityEngine.AnimatorControllerParameterType
 UnityEngine.AnimatorCullingMode
@@ -16771,8 +17101,6 @@ UnityEngine.Caching
 UnityEngine.Camera/MonoOrStereoscopicEye
 UnityEngine.Camera/StereoscopicEye
 UnityEngine.CameraType
-UnityEngine.CanvasGroup
-UnityEngine.CanvasRenderer
 UnityEngine.CapsuleCollider2D
 UnityEngine.CapsuleDirection2D
 UnityEngine.CharacterInfo
@@ -16790,7 +17118,6 @@ UnityEngine.ColliderErrorState2D
 UnityEngine.CollisionDetectionMode
 UnityEngine.CollisionDetectionMode2D
 UnityEngine.CollisionFlags
-UnityEngine.Color32
 UnityEngine.ColorGamut
 UnityEngine.ColorSpace
 UnityEngine.ColorUsageAttribute
@@ -16836,8 +17163,6 @@ UnityEngine.Cubemap
 UnityEngine.CubemapArray
 UnityEngine.CubemapFace
 UnityEngine.CullingQueryOptions
-UnityEngine.Cursor
-UnityEngine.CursorLockMode
 UnityEngine.CursorMode
 UnityEngine.CursorPositionStylePainterParameters
 UnityEngine.CustomGridBrushAttribute
@@ -16846,7 +17171,6 @@ UnityEngine.CustomRenderTextureInitializationSource
 UnityEngine.CustomRenderTextureUpdateMode
 UnityEngine.CustomRenderTextureUpdateZone
 UnityEngine.CustomRenderTextureUpdateZoneSpace
-UnityEngine.CustomYieldInstruction
 UnityEngine.DelayedAttribute
 UnityEngine.DepthTextureMode
 UnityEngine.DetailPrototype
@@ -16860,8 +17184,6 @@ UnityEngine.DisableBatchingType
 UnityEngine.DistanceJoint2D
 UnityEngine.DoF
 UnityEngine.DrivenPropertyManager
-UnityEngine.DrivenRectTransformTracker
-UnityEngine.DrivenTransformProperties
 UnityEngine.DynamicGI
 UnityEngine.EdgeCollider2D
 UnityEngine.Effector2D
@@ -17045,7 +17367,6 @@ UnityEngine.Flare
 UnityEngine.FlareLayer
 UnityEngine.FocusType
 UnityEngine.FogMode
-UnityEngine.FontStyle
 UnityEngine.ForceMode
 UnityEngine.ForceMode2D
 UnityEngine.FrictionJoint2D
@@ -17093,21 +17414,17 @@ UnityEngine.HelpURLAttribute
 UnityEngine.HideInInspector
 UnityEngine.HingeJoint
 UnityEngine.HingeJoint2D
-UnityEngine.HorizontalWrapMode
 UnityEngine.HumanBodyBones
 UnityEngine.HumanDescription
 UnityEngine.HumanParameter
 UnityEngine.HumanPose
 UnityEngine.HumanPoseHandler
 UnityEngine.HumanTrait
-UnityEngine.ICanvasRaycastFilter
-UnityEngine.IL2CPPStructAlignmentAttribute
 UnityEngine.ImageConversion
 UnityEngine.ImageEffectAllowedInSceneView
 UnityEngine.ImageEffectOpaque
 UnityEngine.ImageEffectTransformsToLDR
 UnityEngine.ImagePosition
-UnityEngine.IMECompositionMode
 UnityEngine.Internal.VR.VRTestMock
 UnityEngine.Internal_DrawArguments
 UnityEngine.Internal_DrawMeshMatrixArguments
@@ -17165,12 +17482,8 @@ UnityEngine.LOD
 UnityEngine.LODFadeMode
 UnityEngine.LODGroup
 UnityEngine.MatchTargetWeightMask
-UnityEngine.Material
 UnityEngine.MaterialGlobalIlluminationFlags
 UnityEngine.MaterialPropertyBlock
-UnityEngine.Mesh
-UnityEngine.Mesh/InternalShaderChannel
-UnityEngine.Mesh/InternalVertexChannelType
 UnityEngine.MeshParticleEmitter
 UnityEngine.MeshRenderer
 UnityEngine.MeshSubsetCombineUtility
@@ -17252,7 +17565,6 @@ UnityEngine.NetworkReachability
 UnityEngine.NPOTSupport
 UnityEngine.OcclusionArea
 UnityEngine.OcclusionPortal
-UnityEngine.OperatingSystemFamily
 UnityEngine.Particle
 UnityEngine.ParticleAnimator
 UnityEngine.ParticleCollisionEvent
@@ -17325,7 +17637,6 @@ UnityEngine.PhysicMaterialCombine
 UnityEngine.PhysicsMaterial2D
 UnityEngine.PhysicsUpdateBehaviour2D
 UnityEngine.Ping
-UnityEngine.Plane
 UnityEngine.PlatformEffector2D
 UnityEngine.PlatformSelection
 UnityEngine.Playables.AnimationPlayableUtilities
@@ -17359,27 +17670,20 @@ UnityEngine.Profiling.Profiler
 UnityEngine.Profiling.Recorder
 UnityEngine.Profiling.Sampler
 UnityEngine.Projector
-UnityEngine.PropertyAttribute
 UnityEngine.QualityLevel
 UnityEngine.QualitySettings
 UnityEngine.QueueMode
 UnityEngine.Random
 UnityEngine.Random/State
-UnityEngine.RangeAttribute
-UnityEngine.RangeInt
 UnityEngine.Ray2D
 UnityEngine.RectInt
 UnityEngine.RectInt/PositionEnumerator
 UnityEngine.RectStylePainterParameters
-UnityEngine.RectTransform/Axis
-UnityEngine.RectTransform/Edge
-UnityEngine.RectTransformUtility
 UnityEngine.ReflectionProbe
 UnityEngine.RejectDragAndDropMaterial
 UnityEngine.RelativeJoint2D
 UnityEngine.RenderBuffer
 UnityEngine.RenderBufferHelper
-UnityEngine.Renderer
 UnityEngine.RendererExtensions
 UnityEngine.Rendering.AmbientMode
 UnityEngine.Rendering.BlendMode
@@ -17390,9 +17694,7 @@ UnityEngine.Rendering.BuiltinShaderMode
 UnityEngine.Rendering.BuiltinShaderType
 UnityEngine.Rendering.CameraEvent
 UnityEngine.Rendering.CameraHDRMode
-UnityEngine.Rendering.ColorWriteMask
 UnityEngine.Rendering.CommandBuffer
-UnityEngine.Rendering.CompareFunction
 UnityEngine.Rendering.CopyTextureSupport
 UnityEngine.Rendering.CullMode
 UnityEngine.Rendering.DefaultReflectionMode
@@ -17424,11 +17726,9 @@ UnityEngine.Rendering.ShadowSamplingMode
 UnityEngine.Rendering.SortingGroup
 UnityEngine.Rendering.SphericalHarmonicsL2
 UnityEngine.Rendering.SplashScreen
-UnityEngine.Rendering.StencilOp
 UnityEngine.Rendering.TextureDimension
 UnityEngine.Rendering.UVChannelFlags
 UnityEngine.RenderingPath
-UnityEngine.RenderMode
 UnityEngine.RenderSettings
 UnityEngine.RenderTargetSetup
 UnityEngine.RenderTextureCreationFlags
@@ -17437,7 +17737,6 @@ UnityEngine.RenderTextureFormat
 UnityEngine.RenderTextureMemoryless
 UnityEngine.RenderTextureReadWrite
 UnityEngine.Resolution
-UnityEngine.Resources
 UnityEngine.RigidbodyConstraints
 UnityEngine.RigidbodyConstraints2D
 UnityEngine.RigidbodyInterpolation
@@ -17449,7 +17748,6 @@ UnityEngine.RotationOrder
 UnityEngine.RuntimeAnimatorController
 UnityEngine.RuntimeInitializeLoadType
 UnityEngine.RuntimeInitializeOnLoadMethodAttribute
-UnityEngine.RuntimePlatform
 UnityEngine.RuntimeUndo
 UnityEngine.ScaleMode
 UnityEngine.SceneManagement.Scene/LoadingState
@@ -17459,14 +17757,12 @@ UnityEngine.ScreenOrientation
 UnityEngine.Scripting.GenerateManagedProxyAttribute
 UnityEngine.Scripting.PreserveAttribute
 UnityEngine.ScrollWaitDefinitions
-UnityEngine.SelectionBaseAttribute
 UnityEngine.Serialization.DictionarySerializationSurrogate`2
 UnityEngine.Serialization.ListSerializationSurrogate
 UnityEngine.Serialization.PPtrRemapper
 UnityEngine.Serialization.SerializedStateReader
 UnityEngine.Serialization.SerializedStateWriter
 UnityEngine.Serialization.UnitySurrogateSelector
-UnityEngine.Shader
 UnityEngine.ShaderVariantCollection
 UnityEngine.ShaderVariantCollection/ShaderVariant
 UnityEngine.ShadowmaskMode
@@ -17501,9 +17797,7 @@ UnityEngine.SocialPlatforms.UserScope
 UnityEngine.SocialPlatforms.UserState
 UnityEngine.SoftJointLimit
 UnityEngine.SoftJointLimitSpring
-UnityEngine.SortingLayer
 UnityEngine.Space
-UnityEngine.SpaceAttribute
 UnityEngine.SparseTexture
 UnityEngine.SpeedTreeWindAsset
 UnityEngine.SplatPrototype
@@ -17516,8 +17810,6 @@ UnityEngine.SpriteMaskInteraction
 UnityEngine.SpriteMeshType
 UnityEngine.SpritePackingMode
 UnityEngine.SpritePackingRotation
-UnityEngine.SpriteRenderer
-UnityEngine.Sprites.DataUtility
 UnityEngine.SpriteTileMode
 UnityEngine.StackTraceLogType
 UnityEngine.StaticBatchingHelper
@@ -17537,7 +17829,6 @@ UnityEngine.StyleSheets.StyleValueKeyword
 UnityEngine.StyleSheets.StyleValueType
 UnityEngine.SurfaceEffector2D
 UnityEngine.SystemClock
-UnityEngine.SystemInfo
 UnityEngine.SystemLanguage
 UnityEngine.TargetJoint2D
 UnityEngine.Terrain/MaterialType
@@ -17547,13 +17838,8 @@ UnityEngine.TerrainExtensions
 UnityEngine.TerrainRenderFlags
 UnityEngine.TexGenMode
 UnityEngine.TextAlignment
-UnityEngine.TextAnchor
-UnityEngine.TextAreaAttribute
 UnityEngine.TextAsset
 UnityEngine.TextClipping
-UnityEngine.TextGenerationError
-UnityEngine.TextGenerationSettings
-UnityEngine.TextGenerator
 UnityEngine.TextMesh
 UnityEngine.TextStylePainterParameters
 UnityEngine.Texture2D/EXRFlags
@@ -17561,32 +17847,19 @@ UnityEngine.Texture2DArray
 UnityEngine.Texture3D
 UnityEngine.TextureFormat
 UnityEngine.TextureStylePainterParameters
-UnityEngine.TextureWrapMode
 UnityEngine.ThreadPriority
 UnityEngine.Tilemaps.Tilemap
 UnityEngine.Tilemaps.Tilemap/Orientation
 UnityEngine.Tilemaps.TilemapCollider2D
 UnityEngine.Tilemaps.TilemapRenderer
 UnityEngine.Tilemaps.TilemapRenderer/SortOrder
-UnityEngine.Time
-UnityEngine.TooltipAttribute
-UnityEngine.Touch
-UnityEngine.TouchPhase
 UnityEngine.TouchScreenKeyboard/Status
-UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments
-UnityEngine.TouchScreenKeyboardType
-UnityEngine.TouchType
 UnityEngine.TrailRenderer
 UnityEngine.TransitionType
 UnityEngine.TransparencySortMode
 UnityEngine.Tree
 UnityEngine.TreeInstance
 UnityEngine.TreePrototype
-UnityEngine.UICharInfo
-UnityEngine.UILineInfo
-UnityEngine.UISystemProfilerApi
-UnityEngine.UISystemProfilerApi/SampleType
-UnityEngine.UIVertex
 UnityEngine.UnassignedReferenceException
 UnityEngine.UnityAPICompatibilityVersionAttribute
 UnityEngine.UnityEventQueueSystem
@@ -17594,7 +17867,6 @@ UnityEngine.UnsafeUtility
 UnityEngine.UserAuthorization
 UnityEngine.Vector2Int
 UnityEngine.Vector3Int
-UnityEngine.VerticalWrapMode
 UnityEngine.Video.VideoAspectRatio
 UnityEngine.Video.VideoAudioOutputMode
 UnityEngine.Video.VideoClip
@@ -17603,7 +17875,6 @@ UnityEngine.Video.VideoSource
 UnityEngine.Video.VideoTimeReference
 UnityEngine.Video.VideoTimeSource
 UnityEngine.VRTextureUsage
-UnityEngine.WaitForSecondsRealtime
 UnityEngine.WaitUntil
 UnityEngine.WaitWhile
 UnityEngine.WebCamDevice
@@ -17619,7 +17890,6 @@ UnityEngine.Windows.File
 UnityEngine.Windows.LicenseInformation
 UnityEngine.Windows.Speech.DictationTopicConstraint
 UnityEngine.Windows.Speech.GrammarRecognizer
-UnityEngine.Windows.Speech.KeywordRecognizer
 UnityEngine.WindZone
 UnityEngine.WindZoneMode
 UnityEngine.WorldParticleCollider
@@ -17697,6 +17967,3 @@ UnityEngineInternal.Input.NativeTextEvent
 UnityEngineInternal.Input.NativeTrackingEvent
 UnityEngineInternal.Input.NativeTrackingEvent/Flags
 UnityEngineInternal.LightmapType
-UnityEngineInternal.ScriptingUtils
-UnityEngineInternal.TypeInferenceRuleAttribute
-UnityEngineInternal.TypeInferenceRules
